@@ -4,6 +4,7 @@ import './styles/Parallax.css';
 import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Slide from './Slide';
+import Footer from '../Footer';
 
 
 
@@ -13,7 +14,7 @@ function TextBlock() {
 
         <div id="textblock">
             <div id="textblock-container-1">
-               
+
             </div>
 
             <div id="textblock-container-2">
@@ -70,9 +71,11 @@ function TextBlock() {
                 </div>
 
                 <div id="textblock-container-3">
-                <Slide />
-            </div>
-
+                    <Slide />
+                </div>
+                <div id='footer'>
+                    <Footer />
+                </div>
 
             </div>
 

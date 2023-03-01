@@ -33,7 +33,7 @@
 #textblock-container-3 {
   margin-top: 10%;
   
-  height: 1000px;
+  height: 600px;
 }
 
 #textblock-title {
@@ -396,6 +396,7 @@ span {
 .animation,
 .animation_layer {
   height: 100%;
+  background-size: contain;
 }
 
 .animation {

@@ -11,17 +11,13 @@ function Home() {
             <div className="layout-header">
                 <Header />
               
-                <div className="layout-content">
-                    <HomeContent />
-                </div>
-
-                {/* <div className="layout-footer">
-                    <div />
-                    <Footer />
-                </div> */}
+                             
                 
-
             </div>
+            <div className="layout-content">
+                <HomeContent />
+            </div> 
+          
         </div>
     );
 }

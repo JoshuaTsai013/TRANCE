@@ -2,12 +2,13 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import TextBlock from './textBlock';
 import './styles/Parallax.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Slide from './Slide';
 import Footer from '../Footer';
 
 function Parallaxx() {
   return (
     <div className="container ">
-      <Parallax pages={6} style={{ top: '-5px', left: '0' }} class="animation pparallax">
+      <Parallax pages={4} style={{ top: '-5px', left: '0' }} class="animation parallax">
         <ParallaxLayer offset={0} speed={0}>
           <div class="animation_layer parallax" id="artback"></div>
         </ParallaxLayer>
@@ -36,10 +37,16 @@ function Parallaxx() {
           <div class="animation_layer parallax" id="jungle5">
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0.05}>
+        <ParallaxLayer offset={1} speed={0}>
           <TextBlock />
         </ParallaxLayer>
-       
+        <ParallaxLayer offset={2} speed={0}>
+          <Slide />
+        </ParallaxLayer>
+        <ParallaxLayer offset={3} speed={0}>
+          <Footer />
+        </ParallaxLayer>
+        
       </Parallax>
 
     </div>

@@ -37,13 +37,13 @@ function Parallaxx() {
           <div class="animation_layer parallax" id="jungle5">
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0}>
+        <ParallaxLayer offset={1} style={{ top: '0'}}>
           <TextBlock />
         </ParallaxLayer>
-        <ParallaxLayer offset={2} speed={0}>
+        <ParallaxLayer offset={2} style={{ top: '0'}}>
           <Slide />
         </ParallaxLayer>
-        <ParallaxLayer offset={3} speed={0}>
+        <ParallaxLayer offset={3} style={{ top: '0'}}>
           <Footer />
         </ParallaxLayer>
         

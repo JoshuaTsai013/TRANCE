@@ -1,0 +1,486 @@
+/*前面內容*/
+
+
+
+
+/*中間內容*/
+
+
+#textblock {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(180deg, #181850, #12124d, #1b152d, #4f3e95, #181850);
+
+
+}
+
+#textblock-container {
+  width: 100%;
+  
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+#textblock-container-1 {
+  width: 100%;
+  height: 1000px;
+}
+
+#textblock-container-2 {
+  height: 1600px;
+}
+
+#textblock-container-3 {
+  margin-top: 10%;
+  
+  height: 1000px;
+}
+
+#textblock-title {
+  letter-spacing: 10px;
+  text-shadow: 0px 0px 9px white;
+  text-align: center;
+  color: #ffffff;
+  font-size: 33px;
+  font-weight: 600;
+  font-family: "123";
+}
+
+#textblock-content {
+  color: #f2f0ed;
+  font-size: 13px;
+  display: grid;
+  margin-left: 10%;
+  grid-template-rows: 60% 60%;
+  grid-template-columns: 45% 45%;
+}
+
+/*卡片*/
+.card {
+
+  position: relative;
+  width: 500px;
+  height: 360px;
+  background-color: rgba(45, 51, 238, 0);
+  border-radius: 20px;
+  border: none;
+
+  align-items: center;
+  transition: 0.5s;
+}
+
+
+
+.card .circle {
+  position: absolute;
+  top: 0;
+
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card .circle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(260deg, #3b3bb0, #2828f2, #6446be, #4f3e95);
+
+  clip-path: circle(180px at center);
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.card:nth-child(2) .circle::before {
+  background: linear-gradient(90deg, #3b3bb0, #2828f2, #794ef8, #4f3e95);
+}
+
+.card:nth-child(3) .circle::before {
+  background: linear-gradient(180deg, #3b3bb0, #2828f2, #6446be, #4f3e95);
+}
+
+.card:nth-child(4) .circle::before {
+  background: linear-gradient(360deg, #3b3bb0, #2828f2, #6446be, #4f3e95);
+}
+
+
+.card:hover .circle::before {
+  clip-path: circle(400px at center);
+  background: #4e00c3;
+
+}
+
+.card img {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.card:hover img {
+
+  left: 15%;
+  height: 380px;
+}
+
+.card .content {
+
+  position: relative;
+  width: 50%;
+  margin-left: 60%;
+  padding: 50px 20px 20px 10px;
+  transition: 0.5s;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card h2 {
+
+  font-family: '123';
+}
+
+.card:hover .content {
+
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.card .content h2 {
+
+  color: white;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1em;
+  margin-bottom: 7px;
+}
+
+.card .content p {
+
+  color: white;
+}
+
+.card .content a {
+
+  position: relative;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.card:nth-child(2):hover .circle::before {
+  clip-path: circle(300px at center);
+  background: rgba(45, 183, 238, 0.939);
+}
+
+.card:nth-child(3):hover .circle::before {
+  clip-path: circle(300px at center);
+  background: rgba(45, 51, 238, 0.939);
+}
+
+.card:nth-child(4):hover .circle::before {
+  clip-path: circle(300px at center);
+  background: rgba(135, 45, 238, 0.939);
+}
+
+@media (max-width:768px) {
+
+  #textblock-content {
+
+    margin-left: -5%;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 45% 45%;
+  }
+
+
+  .card .circle::before {
+
+
+    clip-path: circle(160px at center);
+
+  }
+
+  .card:hover {
+    margin-left: 30%;
+    width: 300px;
+    height: 500px;
+  }
+
+  .card .content {
+    margin-left: 0;
+    width: 100%;
+    left: 0;
+    padding: 30px;
+  }
+
+  .card img {
+    height: 300px;
+  }
+
+  .card:hover img {
+    top: 70%;
+    left: 50%;
+    height: 300px;
+  }
+}
+
+@media (max-width:376px) {
+  #textblock-title {
+    font-size: 20px;
+  }
+
+  #textblock-content {
+
+    margin-left: -16%;
+    grid-template-rows: 20% 20% 20%;
+    grid-template-columns: 0%;
+  }
+
+
+  .card .circle::before {
+
+
+    clip-path: circle(120px at center);
+
+  }
+
+  .card:hover {
+
+    text-align: left;
+    margin-left: 110px;
+    width: 280px;
+    height: 350px;
+  }
+
+  .card:hover img {
+    top: 70%;
+    left: 50%;
+    height: 180px;
+  }
+
+  .card img {
+    margin: 0;
+    height: 250px;
+  }
+
+  .card .content {
+    font-size: 8px;
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+
+/*滑動標籤*/
+
+.app {
+  
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  letter-spacing: 10px;
+  text-shadow: 0px 0px 9px white;
+  font-family: '123';
+  color: #f3f6f9;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+
+
+}
+
+
+header p {
+  color: #94a3b8;
+}
+
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+
+.tag-list {
+  width: 50rem;
+  max-width: 90vw;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap: 1rem 0;
+  position: relative;
+  padding: 1.5rem 0;
+  overflow: hidden;
+}
+
+.loop-slider .inner {
+  display: flex;
+  width: fit-content;
+  animation-name: loop;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: var(--direction);
+  animation-duration: var(--duration);
+
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 0 0.2rem;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  background-color: #394250;
+  border-radius: 0.4rem;
+  padding: 0.7rem 1rem;
+  margin-right: 1rem; 
+  box-shadow:
+    0 0.1rem 0.2rem rgba(92, 86, 86, 0.2),
+    0 0.1rem 0.5rem rgba(80, 71, 71, 0.3),
+    0 0.2rem 1.5rem rgb(0 0 0 / 40%);
+
+  
+}
+
+span {
+  font-size: 1.2rem;
+  color: #cbd2db;
+}
+
+.fade {
+  pointer-events: none;
+  background: linear-gradient(90deg, #1e293b, transparent 30%, transparent 70%, #1e293b);
+  position: absolute;
+  inset: 0;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+/*視差滾動*/
+
+.animation,
+.animation_layer {
+  height: 100%;
+}
+
+.animation {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .animation_layer.parallax {
+    background-size: 120% auto;
+    height: 460px;
+  }
+
+  #textblock-container {
+    margin-top: -80%;
+  }
+}
+
+
+@media (max-width:376px) {
+  .animation_layer.parallax {
+    background-size: 120% 60%;
+
+  }
+
+  #textblock-container {
+    margin-top: -115%;
+  }
+
+  #textblock-title {
+    font-size: 15px;
+  }
+
+  #textblock-content {
+    font-size: 10px;
+  }
+}
+
+
+
+
+.animation_layer {
+  background-position: top center;
+
+
+  background-size: 100% 100%;
+  background-repeat: repeat-x;
+
+  width: 100%;
+
+}
+
+.animation_layer.parallax {
+  position: relative;
+}
+
+#artback {
+  background-image: url(./images/background.png);
+}
+
+#mountain {
+  background-image: url(./images/night1.png);
+}
+
+#logoland {
+  background-image: url(./images/night2.png);
+}
+
+#jungle1 {
+  background-image: url(./images/night3.png);
+}
+
+#jungle2 {
+  background-image: url(./images/night4.png);
+}
+
+#jungle3 {
+  background-image: url(./images/night5.png);
+}
+
+#jungle4 {
+  background-image: url(./images/night6.png);
+}
+
+#jungle5 {
+  background-image: url(./images/night7.png);
+}

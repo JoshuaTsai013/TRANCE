@@ -27,7 +27,7 @@ const Tag = ({ text }) => (
 );
 
 const Slide = () => (
-  <div className='app'>
+  <div id='slide'>
     <header>
       <h1>TRANCE TAG</h1>
       <p>CSS only, content independent, bi-directional, customizable</p>

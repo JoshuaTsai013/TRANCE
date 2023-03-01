@@ -1,13 +1,8 @@
-import { Card, Col } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
 import './styles/Parallax.css';
 import React, { useState } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 function TextBlock() {
-
     return (
-
         <div id="textblock">
             <h1 id="textblock-title">TYPELIST <br /><br /></h1>
             <div id="textblock-content">
@@ -21,9 +16,7 @@ function TextBlock() {
                         <a href="#">Listen Now</a>
                     </div>
                     <img src="./images/CD.png" alt="" />
-
                 </div>
-
 
                 <div className="card">
                     <div className="circle"></div>

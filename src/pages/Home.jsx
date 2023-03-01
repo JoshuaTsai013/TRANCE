@@ -17,7 +17,7 @@ function Home() {
             <div className="layout-content">
                 <HomeContent />
             </div> 
-            <Footer />
+          
         </div>
     );
 }

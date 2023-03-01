@@ -396,6 +396,7 @@ span {
 .animation,
 .animation_layer {
   height: 100%;
+  background-size: contain;
 }
 
 .animation {

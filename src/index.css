@@ -94,16 +94,20 @@ top: 1000px;
   background-color: rgb(240, 239, 239);
 }
 
+.main-layout {
+  width: 100%;
+}
+
 .layout-header {
   width: 100%;
   z-index: 999;
 }
 
-
-
-.main-layout {
+.layout-content {
   width: 100%;
-
 }
+
+
+
 
 

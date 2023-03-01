@@ -1,8 +1,6 @@
 import React from "react";
 import Parallaxx from "./Parallaxx";
 import "../../index.css";
-import TextBlock from "./textBlock";
-
 
 function HomeContent() {
     return (
@@ -13,6 +11,5 @@ function HomeContent() {
         </div>
     );
 }
-
 
 export default HomeContent;

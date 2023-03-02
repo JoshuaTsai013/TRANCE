@@ -1,6 +1,4 @@
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -19,7 +17,7 @@ function Header() {
             <Navbar.Brand href="#home">
               <img
                 alt=""
-                src="./public/images/logo.svg"
+                src="/images/logo.svg"
                 width="0"
                 height="0"
                 className="d-inline-block align-top"

@@ -1,7 +1,7 @@
 @font-face {
     font-family: '123';
     src: local("123"),
-      url('./public/fonts/1.OTF') format("woff");
+      url('/fonts/1.OTF') format("woff");
   }
 
 .navlink {

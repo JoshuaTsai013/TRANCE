@@ -7,7 +7,6 @@ function TextBlock() {
             <h1 id="textblock-title">TYPELIST <br /><br /></h1>
             <p id="textblock-p">everything you want is here. </p>
             <div id="textblock-content">
-
                 <div className="card ">
                     <div className="circle"></div>
                     <div className="content">
@@ -73,12 +72,8 @@ function TextBlock() {
                     </div>
                     <img src="./images/about.png" alt="" />
                 </div>
-
             </div>
-
         </div >
-
-
     );
 }
 

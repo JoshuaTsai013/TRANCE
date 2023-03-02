@@ -43,7 +43,7 @@ function Parallaxx() {
         <ParallaxLayer offset={2.2} factor={1.2} style={{top: '0'}}>
           <Slide />
         </ParallaxLayer>
-        <ParallaxLayer offset={3.4} factor={0.5} style={{top: '0'}}>
+        <ParallaxLayer offset={3.3} factor={1.2} style={{top: '0'}}>
           <Footer />
         </ParallaxLayer>
       </Parallax>

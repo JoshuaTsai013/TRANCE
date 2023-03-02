@@ -5,46 +5,54 @@
   display: block;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, #181850, #12124d, #1b152d, #4f3e95, #181850);
+ 
+  background: linear-gradient(180deg, #181850, #12124d, #3d108f, #181850);
 }
 
 #textblock-title {
+  height: 9%;
   letter-spacing: 10px;
   text-shadow: 0px 0px 9px white;
   text-align: center;
   color: #ffffff;
-  font-size: 33px;
+  font-size: 45px;
   font-weight: 600;
   font-family: "123";
-  padding: 50px auto 10px;
+  padding-top: 50px;
+}
+
+#textblock-p {
+  letter-spacing: 10px;
+  color: white;
+  text-align: center;
+  font-size: 10px;
 }
 
 #textblock-content {
   color: #f2f0ed;
   font-size: 13px;
   display: grid;
-  margin-left: 10%;
-  grid-template-rows: 60% 60%;
-  grid-template-columns: 45% 45%;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 50% 50% 50%;
+  grid-template-columns: 30% 30% 30%;
 }
 
 /*卡片*/
 .card {
   position: relative;
-  width: 500px;
+  width: 600px;
   height: 360px;
   background-color: rgba(45, 51, 238, 0);
   border-radius: 20px;
   border: none;
-
-  align-items: center;
+  margin-top: 50px;
   transition: 0.5s;
 }
 
 .card .circle {
   position: absolute;
   top: 0;
-
   left: 0;
   width: 100%;
   height: 100%;
@@ -67,6 +75,7 @@
 
 .card:nth-child(2) .circle::before {
   background: linear-gradient(90deg, #3b3bb0, #2828f2, #794ef8, #4f3e95);
+
 }
 
 .card:nth-child(3) .circle::before {
@@ -74,7 +83,15 @@
 }
 
 .card:nth-child(4) .circle::before {
-  background: linear-gradient(360deg, #3b3bb0, #2828f2, #6446be, #4f3e95);
+  background: linear-gradient(10deg, #3b3bb0, #2828f2, #6446be, #4f3e95);
+}
+
+.card:nth-child(5) .circle::before {
+  background: linear-gradient(220deg, #3b3bb0, #2c1fdf, #6446be, #7353f5);
+}
+
+.card:nth-child(6) .circle::before {
+  background: linear-gradient(120deg, #3b3bb0, #2828f2, #6446be, #4a22eb);
 }
 
 .card:hover .circle::before {
@@ -100,7 +117,7 @@
 .card .content {
   position: relative;
   width: 50%;
-  margin-left: 60%;
+  margin-left: 40%;
   padding: 50px 20px 20px 10px;
   transition: 0.5s;
   pointer-events: none;
@@ -143,17 +160,17 @@
 }
 
 .card:nth-child(2):hover .circle::before {
-  clip-path: circle(300px at center);
+  clip-path: circle(400px at center);
   background: rgba(45, 183, 238, 0.939);
 }
 
 .card:nth-child(3):hover .circle::before {
-  clip-path: circle(300px at center);
+  clip-path: circle(400px at center);
   background: rgba(45, 51, 238, 0.939);
 }
 
 .card:nth-child(4):hover .circle::before {
-  clip-path: circle(300px at center);
+  clip-path: circle(400px at center);
   background: rgba(135, 45, 238, 0.939);
 }
 
@@ -233,7 +250,7 @@
   }
 }
 
-/*滑動標籤*/
+/******************滑動標籤*******************/
 
 #slide {
   width: 100%;
@@ -249,8 +266,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem;
-  text-align: center;
+  
 }
 
 header h1 {
@@ -264,7 +280,9 @@ header h1 {
 }
 
 header p {
-  color: #94a3b8;
+  font-size: 8px;
+  letter-spacing: 10px;
+  color: #c4c3c3;
 }
 
 @media (min-width: 768px) {
@@ -274,8 +292,8 @@ header p {
 }
 
 .tag-list {
-  width: 50rem;
-  max-width: 90vw;
+  width: 75rem;
+  max-width: 100vw;
   display: flex;
   flex-shrink: 0;
   flex-direction: column;

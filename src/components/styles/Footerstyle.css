@@ -16,14 +16,17 @@ h4{
     padding: 0;
   }
   .footer{
+    
     width:100%;
     margin: 0;
   }
   .footer-container{
+    margin-bottom: -1.2%;
     width: 100%;
   }
   /* footer up */
   .footer-up{
+    width: 100%;
     display: flex;
     background-color: #1f1f54;
     justify-content: center;

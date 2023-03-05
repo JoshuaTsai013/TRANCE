@@ -67,6 +67,10 @@ function Header() {
                     <NavDropdown.Item href="#action5">
                       ART WORK
                     </NavDropdown.Item>
+
+                    <NavDropdown.Item href="#action5">
+                      LEARNING
+                    </NavDropdown.Item>
                   </NavDropdown>
                   <Nav.Link href="/Aboutus">SHOP</Nav.Link>
 

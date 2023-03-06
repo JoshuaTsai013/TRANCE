@@ -22,7 +22,7 @@ function Whatdo() {
 
       <Canvas dpr={[1, 2]} shadows camera={{ fov:20 , position: [5, 5, 10]}} style={{ "position": "absolute",width: "100%", height: "100%" ,marginTop:"-5%"}}>
 
-        <PresentationControls speed={1.5} global zoom={.3} polar={[-1.3, Math.PI / 6]}>
+        <PresentationControls speed={1.5} global zoom={.5} polar={[-1.3, Math.PI / 6]}>
           <Stage environment={"sunset"}>
             <Model scale={0.5} />
           </Stage>

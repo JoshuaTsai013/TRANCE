@@ -1,11 +1,10 @@
-
-
 body {
   overflow-y: hidden;
   overflow-x: hidden;
-
   background-color: rgb(20, 21, 24);
 }
+
+
 
 .bg-color {
   background-color: rgb(36, 36, 41);
@@ -17,9 +16,6 @@ html {
 }
 
 /*
-
-
-
 
 /*動畫區*/
 
@@ -33,7 +29,6 @@ html {
   }
 }
 
-
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -42,7 +37,6 @@ html {
   50% {
     opacity: 1;
   }
-
 }
 
 @keyframes scaleDown {
@@ -56,22 +50,17 @@ html {
 }
 
 @keyframes typing {
-
   from {
-
     width: 0.4ch;
     height: 2ch;
   }
 
   to {
-
     width: 13ch;
     height: 2ch;
   }
 
 }
-
-
 
 @keyframes blink {
   50% {
@@ -94,16 +83,20 @@ top: 1000px;
   background-color: rgb(240, 239, 239);
 }
 
+.main-layout {
+  width: 100%;
+}
+
 .layout-header {
   width: 100%;
   z-index: 999;
 }
 
-
-
-.main-layout {
+.layout-content {
   width: 100%;
-
 }
+
+
+
 
 

@@ -1,9 +1,10 @@
 import React from 'react';
+import './styles/slide.css'
 
-const TAGS = ['HTML', 'CSS', 'JavaScript', 'Typescript', 'Tailwind', 'React', 'Next.js', 'Gatsby', 'UI/UX', 'SVG', 'animation', 'webdev'];
-const DURATION = 15000;
+const TAGS = ['Music', 'Model', 'Artwork', 'Learn', 'Tailwind', 'React', 'Next.js', 'Gatsby', 'UI/UX', 'SVG', 'animation', 'webdev'];
+const DURATION = 25000;
 const ROWS = 5;
-const TAGS_PER_ROW = 7;
+const TAGS_PER_ROW = 10;
 
 const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 const shuffle = (arr) => [...arr].sort( () => .5 - Math.random() );
@@ -27,7 +28,7 @@ const Tag = ({ text }) => (
 );
 
 const Slide = () => (
-  <div className='app'>
+  <div id='slide'>
     <header>
       <h1>TRANCE TAG</h1>
       <p>CSS only, content independent, bi-directional, customizable</p>

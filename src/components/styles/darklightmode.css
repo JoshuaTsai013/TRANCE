@@ -1,12 +1,12 @@
 .dark-mode {
-    background-color: #1a1919;
-    color: #999;
+    background-color: none;
+    color: #999999;
     height: 100%;
     transition: background-color 0.25s ease-in-out;
   }
   
   .light-mode {
-    background-color: #fff;
+    background-color: none;
     color: #333;
     height: 100%;
     transition: background-color 0.25s ease-in-out;
@@ -22,7 +22,7 @@
     position: relative;
     display: inline-block;
     width: 60px;
-    height: 14px;
+    height: 0px;
   }
   
   .switch input {
@@ -51,7 +51,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #e3c1fa;
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
@@ -69,11 +69,11 @@
   }
   
   input:checked + .slider {
-    background-color: #19a2c1;
+    background-color: #6719c1;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196f3;
+    box-shadow: 0 0 1px #7c21f3;
   }
   
   input:checked + .slider:before {

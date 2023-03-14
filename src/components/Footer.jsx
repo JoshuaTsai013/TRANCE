@@ -18,7 +18,7 @@ export default function Footer(){
                 </div>
             </div>
 
-            <div className=" footer-container" style={{ display:"flex", justifyContent:"center"}}>
+            <div className="footer-up" style={{ display:"flex", justifyContent:"center"}}>
                 <div className="footer-down">
                         <div className="your-home footer-container">
                             <h4 className="header-title" style={{ margin:"0" }}>TRANCE</h4>

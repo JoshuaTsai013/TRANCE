@@ -1,12 +1,11 @@
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import './styles/Headerstyle.css';
 import '../pages/Home';
+import Darklightmode from './darklightmode';
 
 function Header() {
   return (
@@ -19,12 +18,12 @@ function Header() {
             <Navbar.Brand href="#home">
               <img
                 alt=""
-                src="./public/images/logo.svg"
+                src="/images/logo.svg"
                 width="0"
                 height="0"
                 className="d-inline-block align-top"
               />{' '}
-             
+
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
@@ -38,18 +37,9 @@ function Header() {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                {/* 搜尋 */}
-                {/* <Form className="d-flex navlink">
+                {/* 日夜按鈕 */}
+                <Darklightmode />
 
-                  <Form.Control
-                  
-                    type="search"
-                    placeholder="Search"
-                    className="me-2 searchbar"
-                    aria-label="Search"
-                  />
-                  <Button variant="outline-light me-2">Search</Button>
-                </Form> */}
 
                 <Nav className="justify-content-end flex-grow-1 pe-3  navlink">
                   <Nav.Link className='text-white' href="/Home">HOME</Nav.Link>
@@ -68,6 +58,10 @@ function Header() {
 
                     <NavDropdown.Item href="#action5">
                       ART WORK
+                    </NavDropdown.Item>
+
+                    <NavDropdown.Item href="#action5">
+                      LEARNING
                     </NavDropdown.Item>
                   </NavDropdown>
                   <Nav.Link href="/Aboutus">SHOP</Nav.Link>

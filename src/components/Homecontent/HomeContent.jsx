@@ -4,10 +4,8 @@ import "../../index.css";
 
 function HomeContent() {
     return (
-
         <div className="Homecontent">
             <Parallaxx />
-        
         </div>
     );
 }

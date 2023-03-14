@@ -1,6 +1,5 @@
 import Header from "../components/Header";
-import HomeContent from "../components/Homecontent/HomeContent";
-import '.././index.css';
+import HomeContent from "../components/HomeContent/HomeContent";
 
 function Home() {
     return (

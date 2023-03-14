@@ -1,3 +1,16 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+.animation::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.animation {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+
 /*視差滾動*/
 
 .animation,
@@ -78,6 +91,7 @@
 
 .animation_layer.parallax {
   position: relative;
+  
 }
 
 #artback {
@@ -123,3 +137,4 @@
   background-image: url(./images/night7.png);
   background-position: center;
 }
+

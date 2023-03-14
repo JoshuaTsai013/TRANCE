@@ -1,17 +1,17 @@
 import Header from "../components/Header";
-import AboutContent from "../components/AboutContent";
+import ModelContent from "../components/ModelContent";
 
-function About() {
+function Model() {
     return (
         <div className="main-layout">
             <div className="layout-header">
                 <Header />
             </div>
             <div className="layout-content">
-                <AboutContent />
+                <ModelContent />
             </div> 
         </div>
     );
 }
 
-export default About
+export default Model

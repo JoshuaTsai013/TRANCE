@@ -6,14 +6,12 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import './styles/Headerstyle.css';
 // import '../pages/Home';
 import Darklightmode from './darklightmode';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
   return (
     <>
-
       {['sm',].map((expand) => (
-
         <Navbar className="p-3 navbarCustom" key={expand} variant="dark" expand={expand} >
           <Container fluid>
             {/* <Navbar.Brand href="#home">
@@ -36,18 +34,16 @@ function Header() {
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                   Menu
                 </Offcanvas.Title>
-              </Offcanvas.Header>
-              <Offcanvas.Body>
+                </Offcanvas.Header>
+                <Offcanvas.Body>
                 {/* 日夜按鈕 */}
                 <Darklightmode />
 
-
                 <Nav className="justify-content-end flex-grow-1 pe-3  navlink">
-                  <Nav.Link as={Link} to="/" >HOME</Nav.Link>
-                  <Nav.Link as={Link} to="AboutUs" >ABOUT US</Nav.Link>
-                  <Nav.Link as={Link} to="AboutUs" >MUSIC</Nav.Link>
-                  <Nav.Link as={Link} to="AboutUs" >3D MODEL</Nav.Link>
-
+                  <Nav.Link as={NavLink} to="/">HOME</Nav.Link>
+                  <Nav.Link as={NavLink} to="/AboutUs" >ABOUT US</Nav.Link>
+                  <Nav.Link as={NavLink} to="/Music" >MUSIC</Nav.Link>
+                  <Nav.Link as={NavLink} to="/Model" >3D MODEL</Nav.Link>
 
                   {/* 下拉菜單 */}
                   {/* <NavDropdown

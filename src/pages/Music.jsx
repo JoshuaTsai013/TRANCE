@@ -1,17 +1,17 @@
 import Header from "../components/Header";
-import AboutContent from "../components/AboutContent";
+import MusicContent from "../components/MusicContent";
 
-function About() {
+function Music() {
     return (
         <div className="main-layout">
             <div className="layout-header">
                 <Header />
             </div>
             <div className="layout-content">
-                <AboutContent />
+                <MusicContent />
             </div> 
         </div>
     );
 }
 
-export default About
+export default Music

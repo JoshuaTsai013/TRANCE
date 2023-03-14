@@ -8,7 +8,7 @@ import Footer from '../Footer';
 
 function Parallaxx() {
   return (
-    <div className="container ">
+    <div className="container">
       <Parallax pages={4.9} style={{ top: '-5px', left: '0' }} class="animation parallax">
         <ParallaxLayer offset={0} speed={0}>
           <div class="animation_layer parallax" id="artback"></div>

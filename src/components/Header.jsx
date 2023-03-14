@@ -43,10 +43,10 @@ function Header() {
 
 
                 <Nav className="justify-content-end flex-grow-1 pe-3  navlink">
-                  <Nav.Link as={Link} to="/" >HOME</Nav.Link>
-                  <Nav.Link as={Link} to="AboutUs" >ABOUT US</Nav.Link>
-                  <Nav.Link as={Link} to="AboutUs" >MUSIC</Nav.Link>
-                  <Nav.Link as={Link} to="AboutUs" >3D MODEL</Nav.Link>
+                  <Nav.Link href="/" >HOME</Nav.Link>
+                  <Nav.Link href="AboutUs" >ABOUT US</Nav.Link>
+                  <Nav.Link href="Music" >MUSIC</Nav.Link>
+                  <Nav.Link href="Model" >3D MODEL</Nav.Link>
 
 
                   {/* 下拉菜單 */}

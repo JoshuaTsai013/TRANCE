@@ -4,8 +4,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import './styles/Headerstyle.css';
-import '../pages/Home';
+// import '../pages/Home';
 import Darklightmode from './darklightmode';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -13,9 +14,9 @@ function Header() {
 
       {['sm',].map((expand) => (
 
-        <Navbar className="p-3 navbarr" key={expand} variant="dark" expand={expand} >
+        <Navbar className="p-3 navbarCustom" key={expand} variant="dark" expand={expand} >
           <Container fluid>
-            <Navbar.Brand href="#home">
+            {/* <Navbar.Brand href="#home">
               <img
                 alt=""
                 src="/images/logo.svg"
@@ -24,7 +25,7 @@ function Header() {
                 className="d-inline-block align-top"
               />{' '}
 
-            </Navbar.Brand>
+            </Navbar.Brand> */}
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -42,11 +43,14 @@ function Header() {
 
 
                 <Nav className="justify-content-end flex-grow-1 pe-3  navlink">
-                  <Nav.Link className='text-white' href="/Home">HOME</Nav.Link>
-                  <Nav.Link href="/Aboutus">ABOUT US</Nav.Link>
+                  <Nav.Link as={Link} to="/" >HOME</Nav.Link>
+                  <Nav.Link as={Link} to="AboutUs" >ABOUT US</Nav.Link>
+                  <Nav.Link as={Link} to="AboutUs" >MUSIC</Nav.Link>
+                  <Nav.Link as={Link} to="AboutUs" >3D MODEL</Nav.Link>
+
 
                   {/* 下拉菜單 */}
-                  <NavDropdown
+                  {/* <NavDropdown
 
                     title="TYPE"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
@@ -63,17 +67,17 @@ function Header() {
                     <NavDropdown.Item href="#action5">
                       LEARNING
                     </NavDropdown.Item>
-                  </NavDropdown>
-                  <Nav.Link href="/Aboutus">SHOP</Nav.Link>
+                  </NavDropdown> */}
+                  
 
                 </Nav>
 
-                <Nav className="me-3 gap-2 login">
+                {/* <Nav className="me-3 gap-2 login">
                   <Nav.Link className="btn btn-outline-light text-white" href="#">LOGIN</Nav.Link>
                   <Nav.Link eventKey={2} className="btn btn-outline-light text-white " href="#">
                     SIGN UP
                   </Nav.Link>
-                </Nav>
+                </Nav> */}
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>

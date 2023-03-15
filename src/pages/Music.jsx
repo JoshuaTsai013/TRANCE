@@ -1,22 +1,17 @@
 import Header from "../components/Header";
-import HomeContent from "../components/HomeContent";
+import MusicContent from "../components/MusicContent";
 
-function Home() {
+function Music() {
     return (
         <div className="main-layout">
-
             <div className="layout-header">
                 <Header />
-              
-                             
-                
             </div>
             <div className="layout-content">
-                <HomeContent />
+                <MusicContent />
             </div> 
-          
         </div>
     );
 }
 
-export default Home
+export default Music

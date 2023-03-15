@@ -1,10 +1,8 @@
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import TextBlock from './Typelist';
 import './styles/Parallax.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Slide from './Slide';
 import Footer from '../Footer';
-import Whatdo from './Whatdo';
+
 
 
 
@@ -42,13 +40,13 @@ function Parallaxx() {
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={1} factor={1.2} style={{top: '0',}}>
-          <Whatdo />
+          
         </ParallaxLayer>
         <ParallaxLayer offset={2.2} factor={1.2} style={{top: '0',}}>
-          <TextBlock />
+         
         </ParallaxLayer>
         <ParallaxLayer offset={3.3} factor={1.0} style={{top: '0'}}>
-          <Slide />
+          
         </ParallaxLayer>
         <ParallaxLayer offset={4.3} factor={1.2} style={{top: '0'}}>
           <Footer />

@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import './styles/Headerstyle.css';
 // import '../pages/Home';
-import Darklightmode from './darklightmode';
+import Darklightmode from './Darklightmode';
 import { NavLink } from 'react-router-dom';
 
 function Header() {

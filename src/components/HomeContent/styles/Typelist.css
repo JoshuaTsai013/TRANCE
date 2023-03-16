@@ -32,8 +32,8 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-rows: 50% 50% 50%;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 40% 40%;
 }
 
 
@@ -177,8 +177,8 @@
   #textblock-content {
     padding: 30px;
     justify-content: center;
-    grid-template-rows: 35% 35% 35%;
-    grid-template-columns: 35% 35% 35%;
+    grid-template-rows: 35% 35% ;
+    grid-template-columns: 50% 50% ;
   }
 
   .card .circle::before {
@@ -222,7 +222,7 @@
   #textblock-content {
 
 
-    grid-template-rows: 10% 20% 10% 20% 20% 20%;
+    grid-template-rows: 10% 40% 10%;
     grid-template-columns: 70% 70%;
   }
 

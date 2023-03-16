@@ -29,16 +29,8 @@ function TextBlock() {
                     <img src="./images/house.png" alt="" />
                 </div>
 
-                <div className="card">
-                    <div className="circle"></div>
-                    <div className="content">
-                        <h2>LEARNING</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. iustoLorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque, consequuntur
-                        </p>
-                        <a href="#">Visit Now</a>
-                    </div>
-                    <img src="./images/learn.png" alt="" />
-                </div>
+              
+
                 <div className="card">
                     <div className="circle"></div>
                     <div className="content">
@@ -51,16 +43,7 @@ function TextBlock() {
                     <img src="./images/shop.png" alt="" />
                 </div>
 
-                <div className="card">
-                    <div className="circle"></div>
-                    <div className="content">
-                        <h2>ARTWORK</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. iustoLorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque itaque, consequuntur
-                        </p>
-                        <a href="#">Learn Now</a>
-                    </div>
-                    <img src="./images/Art.png" alt="" />
-                </div>
+               
 
                 <div className="card">
                     <div className="circle"></div>

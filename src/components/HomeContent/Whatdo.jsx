@@ -22,9 +22,9 @@ function Whatdo() {
         <h1 className="whatdo-title">➥ What do we do?</h1>
         <h3>This is a world with everything<br />We have music, models, art, stores, everything you want is here</h3>
 
-       
+
         <InputGroup className="mb-3 searchbar">
-        <h1 className="search-title">↺ Search</h1>
+          <h1 className="search-title">↺ Search</h1>
           <Form.Control
             placeholder="Search"
             aria-label="Recipient's username"
@@ -37,19 +37,16 @@ function Whatdo() {
 
       </div>
 
-
-
-      <Canvas dpr={[1, 2]} shadows camera={{ fov: 20, position: [5, 5, 10] }} style={{ "position": "absolute", width: "100%", height: "100%", marginTop: "-5%" }}>
-
-        <PresentationControls speed={1.5} global zoom={.5} polar={[-1, Math.PI / 5]}>
-          <Stage environment={"sunset"}>
-            <Model scale={0.5} />
-          </Stage>
-
-        </PresentationControls>
-
-      </Canvas>
-
+      {/* model */}
+      <model-viewer id="modelContainerr"
+        src="bmw.glb"
+        camera-orbit="25deg 75deg 3"
+        camera-controls
+        camera-target="auto auto auto"
+        poster="poster.webp"
+        scale="1.2 1.2 1.2"
+        shadow-intensity="2">
+      </model-viewer>
     </div >
   );
 }

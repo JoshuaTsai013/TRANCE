@@ -1,27 +1,24 @@
 import React from "react";
 import { SearchOutlined } from "@ant-design/icons";
-import { Canvas } from '@react-three/fiber';
-import { PresentationControls, Stage, useGLTF } from "@react-three/drei";
+// import { Canvas } from '@react-three/fiber';
+// import { PresentationControls, Stage, useGLTF } from "@react-three/drei";
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import './styles/whatdo.css';
 
-function Model(props) {
-  const { scene } = useGLTF("/bmw.glb");
-  return <primitive object={scene}{...props} />
-}
-
+// function Model(props) {
+//   const { scene } = useGLTF("/bmw.glb");
+//   return <primitive object={scene}{...props} />
+// }
 
 function Whatdo() {
   return (
     <div className="whatdo-container">
 
-
       <div className="whatdo-content">
         <h1 className="whatdo-title">➥ What do we do?</h1>
         <h3>This is a world with everything<br />We have music, models, art, stores, everything you want is here</h3>
-
 
         <InputGroup className="mb-3 searchbar">
           <h1 className="search-title">↺ Search</h1>
@@ -34,15 +31,18 @@ function Whatdo() {
             <SearchOutlined />
           </Button>
         </InputGroup>
-
       </div>
 
       {/* model */}
       <model-viewer id="modelContainerr"
         src="bmw.glb"
-        camera-orbit="25deg 75deg 3"
+        camera-orbit="25deg 75deg 4.7m"
         camera-controls
         camera-target="auto auto auto"
+        disable-zoom
+        auto-rotate
+        rotation-per-second
+        interaction-prompt="none"
         poster="poster.webp"
         scale="1.2 1.2 1.2"
         shadow-intensity="2">

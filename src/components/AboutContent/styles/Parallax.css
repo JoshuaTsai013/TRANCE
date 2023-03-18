@@ -1,11 +1,11 @@
-/* .parallax::-webkit-scrollbar {
+.disableScroll::-webkit-scrollbar {
   display: none;
 }
 
-.parallax {
+.disableScroll {
   -ms-overflow-style: none;
   scrollbar-width: none;
-} */
+}
 
 .animation_layer {
   position: relative;

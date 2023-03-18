@@ -4,9 +4,8 @@ import Footer from '../Footer';
 
 function Parallaxx() {
   return (
-    <div className="container">
-      <Parallax pages={5} style={{ top: '-5px', left: '0' }}>
-        <ParallaxLayer offset={0} factor={1} style={{ top: '0' }}>
+      <Parallax pages={5} style={{ top: '0', left: '0' }} class="disableScroll">
+        <ParallaxLayer offset={0} factor={1} style={{ top: '-5px' }}>
           <div class="animation_layer" id="artback"></div>
         </ParallaxLayer>
         <ParallaxLayer offset={1} factor={1.4} style={{ top: '0' }}>
@@ -22,7 +21,6 @@ function Parallaxx() {
           <Footer id="aboutFooter" />
         </ParallaxLayer>
       </Parallax>
-    </div>
   );
 }
 

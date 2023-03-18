@@ -43,6 +43,7 @@ function Header() {
                   <Nav.Link as={NavLink} to="/">HOME</Nav.Link>
                   <Nav.Link as={NavLink} to="/AboutUs" >ABOUT US</Nav.Link>
                   <Nav.Link as={NavLink} to="/Music" >MUSIC</Nav.Link>
+                  <Nav.Link as={NavLink} to="/Shop" >SHOP</Nav.Link>
                   <Nav.Link as={NavLink} to="/Model" >3D MODEL</Nav.Link>
 
                   {/* 下拉菜單 */}

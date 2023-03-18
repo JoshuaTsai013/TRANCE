@@ -95,46 +95,46 @@
 }
 
 #artback {
-  background-image: url(../../../../public/images/background.png);
+  background-image: url(../../../../images/background.png);
   background-size: cover;
   background-position: center;
 }
 
 #mountain {
-  background-image: url(../../../../public/images/night1.png);
+  background-image: url(../../../../images/night1.png);
   background-size: cover;
   background-position: left;
 }
 
 #logoland {
-  background-image: url(../../../../public/images/night2.png);
+  background-image: url(../../../../images/night2.png);
   background-position: right;
 }
 
 #jungle1 {
-  background-image: url(../../../../public/images/night3.png);
+  background-image: url(../../../../images/night3.png);
   background-position: left;
 }
 
 #jungle2 {
-  background-image: url(../../../../public/images/night4.png);
+  background-image: url(../../../../images/night4.png);
   background-position: right;
 
 
 }
 
 #jungle3 {
-  background-image: url(../../../../public/images/night5.png);
+  background-image: url(../../../../images/night5.png);
   background-position: bottom;
 }
 
 #jungle4 {
-  background-image: url(../../../../public/images/night6.png);
+  background-image: url(../../../../images/night6.png);
   background-position: center;
 }
 
 #jungle5 {
-  background-image: url(../../../../public/images/night7.png);
+  background-image: url(../../../../images/night7.png);
   background-position: center;
 }
 

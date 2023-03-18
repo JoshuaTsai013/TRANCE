@@ -1,11 +1,11 @@
-/* .parallax::-webkit-scrollbar {
+.disableScroll::-webkit-scrollbar {
   display: none;
 }
 
-.parallax {
+.disableScroll {
   -ms-overflow-style: none;
   scrollbar-width: none;
-} */
+}
 
 .animation_layer {
   position: relative;
@@ -16,8 +16,8 @@
   width: 100%;
 }
 
-#artback {
-  background-image: url(./images/background.png);
+#aboutback {
+  background-image: url(./images/5432298.jpg);
   background-size: cover;
   background-position: center;
 }

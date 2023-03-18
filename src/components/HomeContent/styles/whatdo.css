@@ -34,8 +34,12 @@
 
 
 
-Canvas {
-    z-index: -1;
+#modelContainerr{
+    z-index: 1;
+    height: 100vh;
+    
+    width: 100%;
+    background-color: none;
     margin-left: 20%;
 
 }

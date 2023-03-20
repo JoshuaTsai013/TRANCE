@@ -6,6 +6,7 @@
 
 .navlink {
     font-weight: 800;
+
     font-size: 14px;
     font-family: "123";
     letter-spacing: 0.3rem;
@@ -48,4 +49,8 @@ position: relative;
     z-index: 999;
 }
 
-.searchbar {}
+@media (max-width: 768px) {
+    .navlink{
+        white-space:nowrap;
+    }
+}

@@ -36,7 +36,7 @@ function Whatdo() {
       {/* model */}
       <model-viewer id="modelContainerr"
         src="bmw.glb"
-        camera-orbit="25deg 75deg 4.7m"
+        camera-orbit="25deg 75deg 4.1m"
         camera-controls
         camera-target="auto auto auto"
         disable-zoom

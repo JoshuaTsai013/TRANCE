@@ -19,6 +19,21 @@ html {
 
 /*動畫區*/
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 13ch;
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 @keyframes scaleUp {
   from {
     scale: 1;
@@ -49,24 +64,7 @@ html {
   }
 }
 
-@keyframes typing {
-  from {
-    width: 0.4ch;
-    height: 2ch;
-  }
 
-  to {
-    width: 13ch;
-    height: 2ch;
-  }
-
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent
-  }
-}
 
 /*----------bootstrap-navbar-css------------*/
 

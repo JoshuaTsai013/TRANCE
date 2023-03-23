@@ -3,12 +3,14 @@ import './styles/model.css'
 function ModelContent() {
     return (
         <model-viewer id="modelContainer"
-        src="bmw.glb"
-        camera-orbit="25deg 75deg 3m"
+        src="Room.glb"
+        environment-image="night.jpg"
+        exposure="3"
+        camera-orbit="50deg 60deg 3m"
         camera-controls
         camera-target="auto auto auto"
         poster="poster.webp"
-        shadow-intensity="1">
+        shadow-intensity="2">
         </model-viewer>
     );
 }

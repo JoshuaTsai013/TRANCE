@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/slide.css'
 
-const TAGS = ['Music', 'Model', 'Artwork', 'Learn', 'Tailwind', 'React', 'Next.js', 'Gatsby', 'UI/UX', 'SVG', 'animation', 'webdev'];
+const TAGS = ['Music', 'Model', 'Artwork', 'Learn', 'Project', 'React', 'Next.js', 'game', 'UI/UX', 'SVG', 'animation', 'webdev'];
 const DURATION = 25000;
 const ROWS = 5;
 const TAGS_PER_ROW = 10;

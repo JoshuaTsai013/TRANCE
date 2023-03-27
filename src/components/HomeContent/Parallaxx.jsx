@@ -39,10 +39,10 @@ function Parallaxx() {
           <div class="animation_layer parallax" id="jungle5">
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={1} factor={1.2} style={{top: '0',}}>
+        <ParallaxLayer offset={1} factor={1.2} style={{top: '0'}}>
           <Whatdo />
         </ParallaxLayer>
-        <ParallaxLayer offset={2.2} factor={1.2} style={{top: '0',}}>
+        <ParallaxLayer offset={2.2} factor={1.2} style={{top: '0'}}>
           <TextBlock />
         </ParallaxLayer>
         <ParallaxLayer offset={3.3} factor={1.0} style={{top: '0'}}>

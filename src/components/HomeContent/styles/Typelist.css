@@ -23,7 +23,7 @@
   letter-spacing: 10px;
   color: white;
   text-align: center;
-  font-size: 10px;
+  font-size: 5px;
 }
 
 #textblock-content {
@@ -174,11 +174,15 @@
 }
 
 @media (max-width:768px) {
+#textblock{
+
+}
+
   #textblock-content {
     padding: 30px;
     justify-content: center;
-    grid-template-rows: 35% 35% ;
-    grid-template-columns: 50% 50% ;
+    grid-template-rows: 35% 35%;
+    grid-template-columns: 50% 50%;
   }
 
   .card .circle::before {
@@ -207,6 +211,7 @@
     left: 50%;
     height: 300px;
   }
+  
 }
 
 @media (max-width:376px) {
@@ -256,7 +261,10 @@
 
 
   #textblock-p {
-    
-    letter-spacing: 5px;}
 
+    letter-spacing: 5px;
+    font-size: 3px;
+  }
+
+  
 }

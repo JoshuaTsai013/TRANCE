@@ -67,7 +67,7 @@
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
-  
+
   input:checked + .slider {
     background-color: #6719c1;
   }

@@ -29,8 +29,8 @@
   }
   
   header p {
-    font-size: 8px;
-    letter-spacing: 10px;
+    font-size:8px;
+    letter-spacing: 6px;
     color: #c4c3c3;
   }
   
@@ -98,5 +98,9 @@
     100% {
       transform: translateX(-50%);
     }
+  }
+
+  @media (max-width:390px) {
+ 
   }
   

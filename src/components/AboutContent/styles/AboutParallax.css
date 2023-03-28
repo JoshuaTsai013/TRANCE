@@ -22,9 +22,30 @@
   background-position: center;
 }
 
+.title {
+  width: auto;
+  z-index: 1;
+  position: absolute;
+  color: azure;
+  font-family: '123';
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 9px white;
+}
+
+
 #aboutFooter,.footer{
   position: absolute !important;
   bottom: -5px !important;
+}
+
+/*視差滾動*/
+
+.animation {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 /*視差滾動手機*/

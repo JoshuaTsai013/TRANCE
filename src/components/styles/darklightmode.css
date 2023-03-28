@@ -67,7 +67,7 @@
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
-  
+
   input:checked + .slider {
     background-color: #6719c1;
   }
@@ -94,6 +94,6 @@
     padding: 10px;
   }
   
-  @media (max-width: 768px) {
-
+  @media (max-width: 390px) {
+   
   }

@@ -9,11 +9,11 @@ import Footer from '../Footer';
 function Parallaxx() {
   return (
     <div className="container">
-      <Parallax pages={4.9} style={{ top: '0', left: '0' }} class="animation parallax">
+      <Parallax pages={5} style={{ top: '0', left: '0' }} class="animation parallax">
         <ParallaxLayer offset={0} speed={0} style={{ top: '-5px'}}>
           <div class="animation_layer parallax" id="artback"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={-0.1}>
+        <ParallaxLayer offset={0} speed={-0.1} >
           <div class="animation_layer parallax" id="mountain"></div>
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={0.1}>
@@ -39,16 +39,16 @@ function Parallaxx() {
           <div class="animation_layer parallax" id="jungle5">
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={1} factor={1.2} style={{top: '0',}}>
+        <ParallaxLayer offset={1} factor={1.2} style={{top: '0'}}>
           <Whatdo />
         </ParallaxLayer>
-        <ParallaxLayer offset={2.2} factor={1.2} style={{top: '0',}}>
+        <ParallaxLayer offset={2.2} factor={1.2} style={{top: '-1px'}}>
           <TextBlock />
         </ParallaxLayer>
-        <ParallaxLayer offset={3.3} factor={1.0} style={{top: '0'}}>
+        <ParallaxLayer offset={3.4} factor={1.1} style={{top: '-2px'}}>
           <Slide />
         </ParallaxLayer>
-        <ParallaxLayer offset={4.3} factor={0.6} style={{top: '0'}}>
+        <ParallaxLayer offset={4.4} factor={0.7} style={{top: '-1px'}}>
           <Footer />
         </ParallaxLayer>
       </Parallax>

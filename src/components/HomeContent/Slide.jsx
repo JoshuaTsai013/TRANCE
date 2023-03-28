@@ -31,7 +31,7 @@ const Slide = () => (
   <div id='slide'>
     <header>
       <h1>TRANCE TAG</h1>
-      <p>CSS only, content independent, bi-directional, customizable</p>
+      <p>Trance have everything.</p>
     </header>
     <div className='tag-list'>
       {[...new Array(ROWS)].map((_, i) => (

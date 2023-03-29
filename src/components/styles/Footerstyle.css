@@ -37,10 +37,10 @@ h4{
 
 
   .footer-down {
-    background-color: #1f1f54;
+    background: none;
     width: 100%;
     display: flex;
-    background-image: url(https://img.onl/oNsd75);
+  
     padding: 2rem;
     flex-wrap: wrap;
   }

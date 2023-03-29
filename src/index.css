@@ -96,6 +96,9 @@ top: 1000px;
   width: 100%;
 }
 
+*{
+  scroll-behavior: smooth;
+}
 
 
 

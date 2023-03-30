@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import MusicContent from "../components/MusicContent";
+import Footer from '../components/Footer'
 
 function Music() {
     return (
@@ -10,6 +11,7 @@ function Music() {
             <div className="layout-content">
                 <MusicContent />
             </div> 
+            <Footer />
         </div>
     );
 }

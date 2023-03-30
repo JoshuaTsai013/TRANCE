@@ -9,8 +9,11 @@ import Shop from './pages/Shop'
 
 function App() {
   return (
+    
     <BrowserRouter>
+         
       <Routes>
+        
             <Route path="/" element={<Home />} />
             <Route path="/AboutUs" element={<About />} />
             <Route path="/Music" element={<Music />} />

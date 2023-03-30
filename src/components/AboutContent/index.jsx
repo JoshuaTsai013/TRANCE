@@ -4,6 +4,7 @@ import Parallaxx from "./Parallaxx";
 function HomeContent() {
     return (
         <div>
+            
             <Parallaxx />
         </div>
     );

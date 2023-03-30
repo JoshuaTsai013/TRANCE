@@ -34,10 +34,10 @@
 
 
 
-#modelContainerr{
+#modelContainerr {
     z-index: 1;
     height: 100vh;
-    
+
     width: 100%;
     background-color: none;
     margin-left: 20%;
@@ -70,10 +70,10 @@
 }
 
 
-/*手機*/
+/*平板*/
 @media (max-width:768px) {
     .whatdo-title {
-       
+
         font-size: 30px
     }
 
@@ -87,13 +87,14 @@
         width: 100%;
         height: 50px;
     }
-    #modelContainerr{
+
+    #modelContainerr {
         width: 100%;
-     top:20%;
-      right: 20%;
+        top: 10%;
+        right: 20%;
     }
 
-    
+
 }
 
 /*手機*/
@@ -105,11 +106,19 @@
     }
 
     .whatdo-content h3 {
-        padding-top: 25%;
+        margin-top: 20%;
 
         font-size: 6px;
     }
 
+    .search-title {
+        font-size: 6px;
+
+    }
+
+    .searchbar {
+        margin-top: 25%;
+    }
 
 
 }

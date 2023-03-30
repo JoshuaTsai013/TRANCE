@@ -17,7 +17,7 @@ export default function Darklightmode() {
         <span style={{ color: darkMode ? "#c96dfd" : "#ffffff" }}>☪</span>
       </div>
       <div>
-         {/* {darkMode ? "Dark" : "Light"} */}
+       
       </div>
     </div>
   );

@@ -1,30 +1,27 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import './styles/model.css'
-//https://medium.com/hannah-lin/react-hook-%E7%AD%86%E8%A8%98-useref-c628cbf0d7fb
-import loadingPic from '../../assets/images/LOGO.png'
 
 function ModelContent() {
     const modelRef = useRef();
 
     const setModel = (Orbit, Target) => {
-        modelRef.current.cameraOrbit = Orbit ;
-        //modelRef.current.fieldOfView = '45deg';
+        modelRef.current.cameraOrbit = Orbit;
         modelRef.current.cameraTarget = Target;
     }
     return (
         <model-viewer id="modelContainer"
             src="Room.glb"
-            poster={loadingPic}
-            environment-image="night.jpg"
-            exposure="5"
+            poster="LOGO.png"
+            environment-image="neutral"
+            exposure="1"
             camera-controls
-            interaction-prompt="none"
+            // interaction-prompt="none"
             touch-action="none"
             camera-orbit="45deg 85deg 0m"
             camera-target="0m 3m 0m"
             field-of-view="45deg"
             interpolation-decay="100"
-            shadow-intensity="1"
+            shadow-intensity="0.5"
             ref={modelRef}
         >
             <button className="viewButton"
@@ -57,12 +54,10 @@ function ModelContent() {
                 onClick={() => setModel("40deg 55deg 14m", "-8.5m -3.2m -9.5m")}
             >Broken Guitar
             </button>
-            {/* <button className="viewButton"
-                slot="hotspot-5"
-                data-surface="70 0 2258 2259 2262 0.051 0.903 0.046" 
-                onClick={() => setModel("40deg 55deg 14m", "-8.5m -3.2m -9.5m")}
-            >Broken Phone
-            </button> */}
+            <button className="returnButton"                
+                onClick={() => setModel("45deg 75deg 0m", "0m 3m 0m")}
+            >Back To Center
+            </button>
         </model-viewer>
     );
 }

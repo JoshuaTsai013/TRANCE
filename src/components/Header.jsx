@@ -7,7 +7,6 @@ import './styles/Headerstyle.css';
 // import '../pages/Home';
 import Darklightmode from './Darklightmode';
 import { NavLink } from 'react-router-dom';
-
 function Header() {
   return (
     <>
@@ -30,7 +29,7 @@ function Header() {
                 {/* 日夜按鈕 */}
                 {/* <Darklightmode /> */}
 
-                <Nav className="justify-content-end flex-grow-1 pe-3  navlink">
+                <Nav className="justify-content-end flex-grow-1 pe-3 navlink">
                   <Nav.Link as={NavLink} to="/">HOME</Nav.Link>
                   <Nav.Link as={NavLink} to="/AboutUs" >ABOUT US</Nav.Link>
                   <Nav.Link as={NavLink} to="/Music" >MUSIC</Nav.Link>

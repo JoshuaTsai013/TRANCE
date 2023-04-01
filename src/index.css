@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   /* overflow-y: hidden; */
   /* overflow-x: hidden; */
@@ -8,18 +12,13 @@ body {
   user-select: none;
 }
 
-
-
 .bg-color {
   background-color: rgb(36, 36, 41);
 }
 
 html {
-
   cursor: url(https://cur.cursors-4u.net/games/gam-10/gam987.ani), url(https://cur.cursors-4u.net/games/gam-10/gam987.png), auto !important;
 }
-
-/*
 
 /*動畫區*/
 
@@ -73,9 +72,9 @@ html {
 .layout-footer {
   /* top: 1000px;
   z-index: 999;
-  height: 200px; */
-  /* position: relative; */
-  background-color: rgb(240, 239, 239);
+  height: 200px;
+  position: relative;
+  background-color: rgb(240, 239, 239); */
 }
 
 .main-layout {
@@ -83,10 +82,10 @@ html {
 }
 
 .layout-header {
-  position: absolute;
+  /* position: fixed;
   top: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 999; */
 }
 
 .layout-content {
@@ -94,6 +93,3 @@ html {
   width: 100%; */
 }
 
-* {
-  scroll-behavior: smooth;
-}

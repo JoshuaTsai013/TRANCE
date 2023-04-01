@@ -1,17 +1,15 @@
 import Header from "../components/Header";
 import MusicContent from "../components/MusicContent";
 import Footer from '../components/Footer'
-
+import ScrollToTop from '../components/ScrollToTop'
 function Music() {
     return (
-        <div className="main-layout">
-            <div className="layout-header">
+        <div>
+            <ScrollToTop />
+            <div>
                 <Header />
-            </div>
-            <div className="layout-content">
                 <MusicContent />
-            </div> 
-            <Footer />
+            </div>
         </div>
     );
 }

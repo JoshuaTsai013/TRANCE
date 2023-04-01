@@ -3,14 +3,10 @@ import AboutContent from "../components/AboutContent";
 
 function About() {
     return (
-        <div className="main-layout">
-            <div className="layout-header">
-                <Header />
-            </div>
-            <div className="layout-content">
-                <AboutContent />
-            </div> 
-        </div>
+        <>
+            <Header />
+            <AboutContent />
+        </>
     );
 }
 

@@ -1,0 +1,50 @@
+#modelContainer {
+    height: 100vh;
+    width: 100%;
+    /* background-color: #9260f0; */
+    background: linear-gradient(180deg, #0a0a11, #12124d, #1b152d, #100a29, #181850);
+}
+
+.viewButton {
+    background: #fff;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.8);
+    display: block;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    max-width: 128px;
+    overflow-wrap: break-word;
+    padding: 0.5em 1em;
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    transform: translate3d(-50%, -50%, 0);
+}
+/* composes: xxx; */
+.returnButton {
+    background: #c95fd0;
+    opacity: 80%;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.8);
+    display: block;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    max-width: 128px;
+    overflow-wrap: break-word;
+    padding: 0.5em 1em;
+    position: absolute;
+    top: 95px;
+    right: 0px;
+    width: max-content;
+    height: max-content;
+    transform: translate3d(-50%, -50%, 0);
+
+}

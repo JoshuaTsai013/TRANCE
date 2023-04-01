@@ -34,8 +34,12 @@
 
 
 
-Canvas {
-    z-index: -1;
+#modelContainerr {
+    z-index: 1;
+    height: 100vh;
+
+    width: 100%;
+    background-color: none;
     margin-left: 20%;
 
 }
@@ -66,20 +70,55 @@ Canvas {
 }
 
 
-/*手機*/
-@media (max-width:376px) {
+/*平板*/
+@media (max-width:768px) {
     .whatdo-title {
-        margin-top: 10%;
-        width: 20%;
-        font-size: 18px
+
+        font-size: 30px
     }
 
     .whatdo-content h3 {
-        padding-top: 55%;
-
-        font-size: 12px;
+        font-size: 13px;
     }
 
+    .searchbar {
+        z-index: 1;
+        margin-top: 20%;
+        width: 100%;
+        height: 50px;
+    }
+
+    #modelContainerr {
+        width: 100%;
+        top: 10%;
+        right: 20%;
+    }
+
+
+}
+
+/*手機*/
+@media (max-width:390px) {
+    .whatdo-title {
+        margin-top: 10%;
+        width: 100%;
+        font-size: 16px
+    }
+
+    .whatdo-content h3 {
+        margin-top: 20%;
+
+        font-size: 6px;
+    }
+
+    .search-title {
+        font-size: 6px;
+
+    }
+
+    .searchbar {
+        margin-top: 25%;
+    }
 
 
 }

@@ -23,7 +23,7 @@
   letter-spacing: 10px;
   color: white;
   text-align: center;
-  font-size: 10px;
+  font-size: 5px;
 }
 
 #textblock-content {
@@ -32,8 +32,8 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  grid-template-rows: 50% 50% 50%;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 40% 40%;
 }
 
 
@@ -94,7 +94,7 @@
 }
 
 .card:hover .circle::before {
-  clip-path: circle(400px at center);
+  clip-path: circle(500px at center);
   background: #4e00c3;
 }
 
@@ -159,26 +159,30 @@
 }
 
 .card:nth-child(2):hover .circle::before {
-  clip-path: circle(400px at center);
+  clip-path: circle(500px at center);
   background: rgba(45, 183, 238, 0.939);
 }
 
 .card:nth-child(3):hover .circle::before {
-  clip-path: circle(400px at center);
+  clip-path: circle(500px at center);
   background: rgba(45, 51, 238, 0.939);
 }
 
 .card:nth-child(4):hover .circle::before {
-  clip-path: circle(400px at center);
+  clip-path: circle(500px at center);
   background: rgba(135, 45, 238, 0.939);
 }
 
 @media (max-width:768px) {
+#textblock{
+
+}
+
   #textblock-content {
     padding: 30px;
     justify-content: center;
-    grid-template-rows: 35% 35% 35%;
-    grid-template-columns: 35% 35% 35%;
+    grid-template-rows: 35% 35%;
+    grid-template-columns: 50% 50%;
   }
 
   .card .circle::before {
@@ -207,9 +211,10 @@
     left: 50%;
     height: 300px;
   }
+  
 }
 
-@media (max-width:376px) {
+@media (max-width:390px) {
   #textblock-title {
 
     font-size: 20px;
@@ -222,7 +227,7 @@
   #textblock-content {
 
 
-    grid-template-rows: 10% 20% 10% 20% 20% 20%;
+    grid-template-rows: 10% 40% 10%;
     grid-template-columns: 70% 70%;
   }
 
@@ -256,7 +261,10 @@
 
 
   #textblock-p {
-    
-    letter-spacing: 5px;}
 
+    letter-spacing: 5px;
+    font-size: 3px;
+  }
+
+  
 }

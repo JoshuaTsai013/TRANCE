@@ -7,23 +7,13 @@ import './styles/Headerstyle.css';
 // import '../pages/Home';
 import Darklightmode from './Darklightmode';
 import { NavLink } from 'react-router-dom';
-
 function Header() {
   return (
     <>
       {['sm',].map((expand) => (
         <Navbar className="p-3 navbarCustom" key={expand} variant="dark" expand={expand} >
           <Container fluid>
-            {/* <Navbar.Brand href="#home">
-              <img
-                alt=""
-                src="/images/logo.svg"
-                width="0"
-                height="0"
-                className="d-inline-block align-top"
-              />{' '}
-
-            </Navbar.Brand> */}
+           
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -32,17 +22,18 @@ function Header() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Menu
+                 TRANCE MENU
                 </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>
                 {/* 日夜按鈕 */}
-                <Darklightmode />
+                {/* <Darklightmode /> */}
 
-                <Nav className="justify-content-end flex-grow-1 pe-3  navlink">
+                <Nav className="justify-content-end flex-grow-1 pe-3 navlink">
                   <Nav.Link as={NavLink} to="/">HOME</Nav.Link>
                   <Nav.Link as={NavLink} to="/AboutUs" >ABOUT US</Nav.Link>
                   <Nav.Link as={NavLink} to="/Music" >MUSIC</Nav.Link>
+                  <Nav.Link as={NavLink} to="/Shop" >SHOP</Nav.Link>
                   <Nav.Link as={NavLink} to="/Model" >3D MODEL</Nav.Link>
 
                   {/* 下拉菜單 */}

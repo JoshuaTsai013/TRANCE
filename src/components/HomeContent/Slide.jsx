@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/slide.css'
 
-const TAGS = ['Music', 'Model', 'Artwork', 'Learn', 'Tailwind', 'React', 'Next.js', 'Gatsby', 'UI/UX', 'SVG', 'animation', 'webdev'];
+const TAGS = ['Music', 'Model', 'Artwork', 'Learn', 'Project', 'React', 'Next.js', 'game', 'UI/UX', 'SVG', 'animation', 'webdev'];
 const DURATION = 25000;
 const ROWS = 5;
 const TAGS_PER_ROW = 10;
@@ -31,7 +31,7 @@ const Slide = () => (
   <div id='slide'>
     <header>
       <h1>TRANCE TAG</h1>
-      <p>CSS only, content independent, bi-directional, customizable</p>
+      <p>Trance have everything.</p>
     </header>
     <div className='tag-list'>
       {[...new Array(ROWS)].map((_, i) => (

@@ -25,7 +25,7 @@ const ScrollToTop = () => {
         });
     };
     return (
-        <div className="top-to-btm">
+        <div className="top-to-btn">
             {" "}
             {showTopBtn && (
                 <FaAngleUp

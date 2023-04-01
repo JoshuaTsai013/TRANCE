@@ -43,7 +43,6 @@ function Whatdo() {
         auto-rotate
         rotation-per-second
         interaction-prompt="none"
-        poster="poster.webp"
         scale="1.2 1.2 1.2"
         shadow-intensity="2">
       </model-viewer>

@@ -17,10 +17,10 @@ export default function Footer() {
 
                     <div className=" hn  footer-down-right">
                         <div className="icons ">
-                            <a href="https://www.pinterest.com/paviliongift/" className='footer-icon' target="_blank" title="youtube" itemprop="significantLink"><YoutubeOutlined/></a>
-                            <a href="https://www.facebook.com/paviliongift" className='footer-icon' target="_blank" title="Facebook" itemprop="significantLink"><FacebookOutlined /></a>
-                            <a href="https://twitter.com/PavilionGiftCo" className='footer-icon' target="_blank" title="Twitter" itemprop="significantLink"><TwitterOutlined /></a>
-                            <a href="http://instagram.com/paviliongiftcompany" className='footer-icon' target="_blank" title="Instagram" itemprop="significantLink"><InstagramOutlined/></a>
+                            <a href="https://www.pinterest.com/paviliongift/" className='footer-icon' target="_blank" title="youtube" itemProp="significantLink"><YoutubeOutlined/></a>
+                            <a href="https://www.facebook.com/paviliongift" className='footer-icon' target="_blank" title="Facebook" itemProp="significantLink"><FacebookOutlined /></a>
+                            <a href="https://twitter.com/PavilionGiftCo" className='footer-icon' target="_blank" title="Twitter" itemProp="significantLink"><TwitterOutlined /></a>
+                            <a href="http://instagram.com/paviliongiftcompany" className='footer-icon' target="_blank" title="Instagram" itemProp="significantLink"><InstagramOutlined/></a>
      
                             
                         </div>

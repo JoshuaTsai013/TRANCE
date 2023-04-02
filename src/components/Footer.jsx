@@ -26,7 +26,7 @@ export default function Footer() {
                                     <li className="options"></li>
                                     <hr className="footer-line-2" />
                                     <li className="options">About</li>
-                                    <li className="options">Story</li>
+                                    <li className="options">Partners</li>
                                     <li className="options">Contact us</li>
                                     <li className="options">Careers</li>
                                 </ul>
@@ -42,11 +42,11 @@ export default function Footer() {
                                 </ul>
 
                                 <ul className="footer-about">
-                                    <li style={{ marginBottom: "0.5rem" }} className="options-title">SUPPORT</li>
+                                    <li style={{ marginBottom: "0.5rem" }} className="options-title">MUSIC</li>
                                     <li className="options"></li>
                                     <hr className=" footer-line-2" />
-                                    <li className="options">Costomers</li>
-                                    <li className="options">Contact</li>
+                                    <li className="options">Saved</li>
+                                    <li className="options">Liked</li>
                                 </ul>
 
                                 <ul className="footer-about">

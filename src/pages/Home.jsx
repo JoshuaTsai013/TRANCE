@@ -4,7 +4,7 @@ import HomeContent from "../components/HomeContent";
 
 import ScrollToTop from "../components/ScrollToTop";
 
-const Home = () => {
+function Home() {
   
 
     return (

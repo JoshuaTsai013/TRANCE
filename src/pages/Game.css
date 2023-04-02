@@ -1,45 +1,66 @@
-.game {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-  .row {
-    display: flex;
-  }
-  
-  .square {
-    width: 50px;
-    height: 50px;
-    margin: 2px;
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-  }
-  
-  .square.red {
-    background-color: red;
-  }
-  
-  .square.blue {
-    background-color: blue;
-  }
-  
-  .square.green {
-    background-color: green;
-  }
-  
-  .square.yellow {
-    background-color: yellow;
-  }
-  
-  .square.purple {
-    background-color: purple;
-  }
-  
-  .square.orange {
-    background-color: orange;
-  }
-  
+html, body {
+  height: 100%;
+  background-color: none;
+  color: #00b800;
+  font-size: 20px;
+  margin:0;
+  padding: 0;
+  padding-top: 10px;
+  font-family: monospace;
+  text-align: center;
+}
+
+body {
+  font-weight: 400;
+}
+
+.containerr{
+
+  margin-top: 10%;
+}
+
+button {
+  background-color: none;
+  font-family:monospace;
+    display: block;
+  margin: 0 auto;
+  border: none;
+  background: #a80020;
+  background: #00b800;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+h1 {
+  font-family:'123';
+  font-size: 30px;
+  text-align:center;
+}
+
+h4 {
+  font-family:monospace;
+  font-size: 26px;
+  text-align:center;
+}
+
+
+textarea {
+    background-color: none;
+  font-family: 'Press Start 2P', cursive;
+  border: 3px solid black;
+  width: 80%;
+  margin: 0 auto;
+  outline: none;
+  height: 250px;
+  font-family: monospace;
+  background: #00b800;
+  padding: 10px;
+}
+
+textarea:disabled {
+  background-color: #c4c4c4;
+}

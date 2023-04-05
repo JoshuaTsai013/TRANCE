@@ -1,12 +1,22 @@
+import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import HomeContent from "../components/HomeContent";
 
-function Home() {
+import ScrollToTop from "../components/ScrollToTop";
+
+const Home = () => {
+  
+
     return (
-        <>
-            <Header />
-            <HomeContent />
-        </>
+        <div>
+            
+
+            <ScrollToTop />
+            <div>
+                <Header />
+                <HomeContent />
+            </div>
+        </div>
     );
 }
 

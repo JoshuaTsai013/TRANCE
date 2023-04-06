@@ -18,18 +18,17 @@ function Whatdo() {
 
       <div className="whatdo-content">
         <h1 className="whatdo-title">➥ What do we do?</h1>
-        <h3>This is a world with everything<br />We have music, models, art, stores, everything you want is here</h3>
+        <h3>TRANCE is a creative studio that specializes in 3D design, <br />music production, and art direction. Our team offers services <br />including 3D modeling and animation, music composition, and art direction<br /> for branding and marketing campaigns. Contact us today to learn more.</h3>
+<br />
 
         <InputGroup className="mb-3 searchbar">
-          <h1 className="search-title">↺ Search</h1>
-          <Form.Control
-            placeholder="Search"
-            aria-label="Recipient's username"
-            aria-describedby="basic-addon2"
-          />
-          <Button variant="outline-light" id="button-addon2">
-            <SearchOutlined />
+          <h1 className="search-title"></h1>
+         
+          <a href='/AboutUs' target="_blank">
+          <Button variant="outline-light" id="button-addon2" onClick={() => onClickOpenVacancy(id)}>
+            <h2>LEARN MORE ↗</h2>
           </Button>
+          </a>
         </InputGroup>
       </div>
 

@@ -14,7 +14,7 @@ function Header() {
         <Navbar className="p-3 navbarCustom" key={expand} variant="dark" expand={expand} >
           <Container fluid>
            
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Toggle className='ham' aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}

@@ -31,8 +31,8 @@ export default function Footer() {
                                     <li className="options">Careers</li>
                                 </ul>
 
-                                <ul className="footer-about">
-                                    <li style={{ marginBottom: "0.5rem" }} className="options-title">SHOP</li>
+                                <ul className="footer-about" style={{ marginLeft:"0px",fontSize:"5px"}}>
+                                    <li style={{ marginBottom: "0.5rem" ,marginLeft:"0.5rem"}} className="options-title">SHOP</li>
                                     <li className="options"></li>
                                     <hr className=" footer-line-2" />
                                     <li className="options">Precautions</li>

@@ -3,7 +3,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { FaAngleUp } from 'react-icons/fa';
 
-import './styles/ScrollToTop.css';
+import './ScrollToTop.css';
 
 
 

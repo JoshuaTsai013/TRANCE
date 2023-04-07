@@ -1,4 +1,4 @@
-import './styles/Footerstyle.css';
+import './Footerstyle.css';
 import { FacebookOutlined, InstagramOutlined, PrinterOutlined, TwitterOutlined, YoutubeOutlined } from '@ant-design/icons';
 
 export default function Footer() {

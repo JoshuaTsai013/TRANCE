@@ -21,7 +21,7 @@ h4 {
   display: flex;
   background-image: url(https://img.onl/oNsd75);
   justify-content: center;
-  padding: 2rem;
+  padding: 2rem 2rem 0;
 }
 
 /* footer down */

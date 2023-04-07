@@ -31,7 +31,7 @@ export default function Footer() {
                                     <li className="options">Careers</li>
                                 </ul>
 
-                                <ul className="footer-about" style={{ marginLeft:"0px",fontSize:"5px"}}>
+                                <ul className="footer-about">
                                     <li style={{ marginBottom: "0.5rem" ,marginLeft:"0.5rem"}} className="options-title">SHOP</li>
                                     <li className="options"></li>
                                     <hr className=" footer-line-2" />
@@ -61,7 +61,7 @@ export default function Footer() {
 
                     <div style={{ width: "100%", display: "flex", justifyContent: "center", flexDirection: "column" }}>
                         <hr className=" footer-line " />
-                        <p className=" copyright " style={{ marginBottom: "4.5rem" }}>Copyright © 2023 TRANCE All Rights Reserved.</p>
+                        <p className=" copyright " style={{ marginBottom: "0.5rem" }}>Copyright © 2023 TRANCE All Rights Reserved.</p>
                     </div>
 
                 </div>

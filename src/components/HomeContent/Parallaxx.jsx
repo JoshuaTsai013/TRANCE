@@ -8,7 +8,7 @@ import Footer from '../Footer';
 function Parallaxx() {
   return (
     <div className="container">
-      <Parallax pages={5} style={{ top: '0', left: '0' }} className="animation parallax hideScrollBar">
+      <Parallax pages={5.9} style={{ top: '0', left: '0' }} className="animation parallax hideScrollBar">
         <ParallaxLayer offset={0} speed={0} style={{ top: '-5px'}}>
           <div className="animation_layer parallax" id="artback"></div>
         </ParallaxLayer>
@@ -36,16 +36,16 @@ function Parallaxx() {
         <ParallaxLayer offset={0} speed={-0.2}>
           <div className="animation_layer parallax" id="jungle5"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={1} factor={1.2} style={{top: '0'}}>
+        <ParallaxLayer offset={1} factor={1.4} style={{top: '0'}}>
           <Whatdo />
         </ParallaxLayer>
-        <ParallaxLayer offset={2.2} factor={1.2} style={{top: '-1px'}}>
+        <ParallaxLayer offset={2.4} factor={1.4} style={{top: '-1px'}}>
           <TextBlock />
         </ParallaxLayer>
-        <ParallaxLayer offset={3.4} factor={1.1} style={{top: '-2px'}}>
+        <ParallaxLayer offset={3.8} factor={1.65} style={{top: '-2px'}}>
           <Slide />
         </ParallaxLayer>
-        <ParallaxLayer offset={4.5} factor={0.3} style={{top: '-5px'}}>
+        <ParallaxLayer offset={5.4} factor={0.45} style={{top: '0px', background: 'linear-gradient(180deg, #181850, #12124d, #3d108f, #181850)'}}>
           <Footer />
         </ParallaxLayer>
       </Parallax>

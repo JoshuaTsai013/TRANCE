@@ -19,15 +19,15 @@ function Whatdo() {
       <div className="whatdo-content">
         <h1 className="whatdo-title">➥ What do we do?</h1>
         <h3>TRANCE is a creative studio that specializes in 3D design, <br />music production, and art direction. Our team offers services <br />including 3D modeling and animation, music composition, and art direction<br /> for branding and marketing campaigns. Contact us today to learn more.</h3>
-<br />
+        <br />
 
         <InputGroup className="mb-3 searchbar">
           <h1 className="search-title"></h1>
-         
+
           <a href='/AboutUs' target="_blank">
-          <Button variant="outline-light" id="button-addon2" onClick={() => onClickOpenVacancy(id)}>
-            <h2>LEARN MORE ↗</h2>
-          </Button>
+            <Button variant="outline-light" id="button-addon2" onClick={() => onClickOpenVacancy(id)}>
+              <h2>LEARN MORE ↗</h2>
+            </Button>
           </a>
         </InputGroup>
       </div>
@@ -35,8 +35,8 @@ function Whatdo() {
       {/* model */}
       <model-viewer id="modelContainerr"
         src="bmw.glb"
-        camera-orbit="25deg 75deg 4.1m"
-        camera-controls
+        camera-orbit="25deg 75deg 5.5m"
+        // camera-controls
         camera-target="auto auto auto"
         disable-zoom
         auto-rotate

@@ -52,10 +52,10 @@ function Parallaxx() {
         </div>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={6.6} factor={0.5} style={{ top: '0' }}>
+      <ParallaxLayer offset={6.6} factor={1.1} style={{ top: '0' }}>
         <div className="animation_layer aboutback"></div>
       </ParallaxLayer>
-      <ParallaxLayer offset={7.1} factor={0.6} style={{ top: '0' }}>
+      <ParallaxLayer offset={7.2} style={{ bottom: '0' }}>
         <Footer />
       </ParallaxLayer>
     </Parallax>

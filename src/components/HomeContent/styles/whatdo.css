@@ -7,9 +7,12 @@
 
 .whatdo-content h3 {
     padding-top: 10%;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 170%;
+    text-align: left;
     font-family: 'ariel';
 }
+
 
 .whatdo-title {
     z-index: 1;
@@ -46,27 +49,27 @@
 
 /*searchbar*/
 
-.searchbar {
+#button-addon2 {
+   
     z-index: 1;
-    margin-top: 10%;
-    width: 40%;
-    height: 60px;
+    margin-top: 5%;
+    width: 100%;
+    
+    height: 50px;
+   
 }
 
-#button-addon2 {
-    color: rgb(238, 236, 236);
 
+#button-addon2 h2{
+font-family: '123';
+font-size: 25px;
 }
 
 .search-title {
-    z-index: 1;
-    bottom: 120%;
+  
+ 
     position: absolute;
-    color: azure;
-    font-family: '123';
-    font-size: 25px;
-    letter-spacing: 2px;
-    text-shadow: 0px 0px 9px white;
+   
 }
 
 

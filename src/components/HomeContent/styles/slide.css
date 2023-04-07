@@ -29,7 +29,7 @@
   }
   
   header p {
-    font-size:8px;
+    font-size:0.7rem;
     letter-spacing: 6px;
     color: #c4c3c3;
   }
@@ -100,7 +100,4 @@
     }
   }
 
-  @media (max-width:390px) {
  
-  }
-  

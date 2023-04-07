@@ -26,13 +26,13 @@ export default function Footer() {
                                     <li className="options"></li>
                                     <hr className="footer-line-2" />
                                     <li className="options">About</li>
-                                    <li className="options">Story</li>
+                                    <li className="options">Partners</li>
                                     <li className="options">Contact us</li>
                                     <li className="options">Careers</li>
                                 </ul>
 
                                 <ul className="footer-about">
-                                    <li style={{ marginBottom: "0.5rem" }} className="options-title">SHOP</li>
+                                    <li style={{ marginBottom: "0.5rem" ,marginLeft:"0.5rem"}} className="options-title">SHOP</li>
                                     <li className="options"></li>
                                     <hr className=" footer-line-2" />
                                     <li className="options">Precautions</li>
@@ -42,11 +42,11 @@ export default function Footer() {
                                 </ul>
 
                                 <ul className="footer-about">
-                                    <li style={{ marginBottom: "0.5rem" }} className="options-title">SUPPORT</li>
+                                    <li style={{ marginBottom: "0.5rem" }} className="options-title">MUSIC</li>
                                     <li className="options"></li>
                                     <hr className=" footer-line-2" />
-                                    <li className="options">Costomers</li>
-                                    <li className="options">Contact</li>
+                                    <li className="options">Saved</li>
+                                    <li className="options">Liked</li>
                                 </ul>
 
                                 <ul className="footer-about">
@@ -61,7 +61,7 @@ export default function Footer() {
 
                     <div style={{ width: "100%", display: "flex", justifyContent: "center", flexDirection: "column" }}>
                         <hr className=" footer-line " />
-                        <p className=" copyright " style={{ marginBottom: "4.5rem" }}>Copyright © 2023 TRANCE All Rights Reserved.</p>
+                        <p className=" copyright " style={{ marginBottom: "0.5rem" }}>Copyright © 2023 TRANCE All Rights Reserved.</p>
                     </div>
 
                 </div>

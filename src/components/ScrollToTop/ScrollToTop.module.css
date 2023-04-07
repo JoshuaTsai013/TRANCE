@@ -1,21 +1,16 @@
-*{
+* {
   scroll-behavior: smooth;
 }
 
-
-
-.top-to-btn {
+.topToBtn {
   position: relative;
 }
 
-.icon-position {
+.iconStyle {
   position: fixed;
   bottom: 40px;
   right: 25px;
   z-index: 20;
-}
-
-.icon-style {
   background-color: none;
   border: 2px solid #fff;
   border-radius: 50%;

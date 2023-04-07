@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./styles/darklightmode.css";
+import "./darklightmode.css";
 
 //☀︎ ☽
 export default function Darklightmode() {

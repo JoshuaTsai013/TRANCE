@@ -1,17 +1,17 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import './styles/Headerstyle.css';
+import styles from './Headerstyle.module.css';
 // import '../pages/Home';
-import Darklightmode from './Darklightmode';
+// import Darklightmode from '../Darklightmode';
 import { NavLink } from 'react-router-dom';
 function Header() {
   return (
     <>
       {['sm',].map((expand) => (
-        <Navbar className="p-3 navbarCustom" key={expand} variant="dark" expand={expand} >
+        <Navbar className={styles.navbarCustom} key={expand} variant="dark" expand={expand} >
           <Container fluid>
            
             <Navbar.Toggle className='ham' aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -28,12 +28,11 @@ function Header() {
                 <Offcanvas.Body>
                 {/* 日夜按鈕 */}
                 {/* <Darklightmode /> */}
-
-                <Nav className="justify-content-end flex-grow-1 pe-3 navlink">
+                <Nav className={styles.navlink}>
                   <Nav.Link as={NavLink} to="/">HOME</Nav.Link>
                   <Nav.Link as={NavLink} to="/AboutUs" >ABOUT US</Nav.Link>
                   <Nav.Link as={NavLink} to="/Music" >MUSIC</Nav.Link>
-                  <Nav.Link as={NavLink} to="/Shop" >SHOP</Nav.Link>
+                  {/* <Nav.Link as={NavLink} to="/Shop" >SHOP</Nav.Link> */}
                   <Nav.Link as={NavLink} to="/Model" >3D MODEL</Nav.Link>
 
                   {/* 下拉菜單 */}

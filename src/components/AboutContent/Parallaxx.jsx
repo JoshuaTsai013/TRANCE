@@ -1,12 +1,10 @@
-import { useRef, useEffect } from 'react';
-
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import "./styles/AboutParallax.css"
 import Footer from '../Footer';
 import TypingEffect from './TypingEffect'
 function Parallaxx() {
   return (
-    <Parallax pages={7.7} className="hideScrollBar">
+    <Parallax pages={7.3} className="hideScrollBar">
       <ParallaxLayer offset={0} factor={1} style={{ top: '-5px' }}>
         <div className="animation_layer aboutback"></div>
       </ParallaxLayer>
@@ -55,7 +53,7 @@ function Parallaxx() {
       <ParallaxLayer offset={6.6} factor={1.1} style={{ top: '0' }}>
         <div className="animation_layer aboutback"></div>
       </ParallaxLayer>
-      <ParallaxLayer offset={7.2} style={{ bottom: '0' }}>
+      <ParallaxLayer offset={6.8} style={{ bottom: '0' }}>
         <Footer />
       </ParallaxLayer>
     </Parallax>

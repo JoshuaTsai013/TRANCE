@@ -37,7 +37,7 @@ function Parallaxx() {
       </ParallaxLayer>
       <ParallaxLayer offset={4.4} speed={0.3} className="animation">{/* sticky={{ start: 1, end: 3 }} */}
         <div className="title" style={{ left: '10%' }}>
-          <h1>LUNA</h1>
+          <h1>LENA</h1>
         </div>
       </ParallaxLayer>
       <ParallaxLayer offset={5.2} factor={1.4} style={{ top: '0' }}>

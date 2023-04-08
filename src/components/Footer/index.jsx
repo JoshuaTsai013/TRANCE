@@ -3,7 +3,7 @@ import { FacebookOutlined, InstagramOutlined, PrinterOutlined, TwitterOutlined, 
 
 export default function Footer() {
     return (
-        <footer className={styles.footer}>
+        <footer className={styles.footer} col-sm-12 col-md-6>
             <div className={styles.footerUp}>
                 <div className={styles.footerDown}>
                     <div className={styles.yourHome}>

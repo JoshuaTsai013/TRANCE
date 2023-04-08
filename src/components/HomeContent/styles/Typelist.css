@@ -59,6 +59,7 @@
   overflow: hidden;
 }
 
+
 .card .circle::before {
   content: "";
   position: absolute;

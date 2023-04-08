@@ -12,8 +12,8 @@ function ModelContent() {
         <model-viewer id="modelContainer"
             src="Room.glb"
             poster="LOGO.png"
-            environment-image="night.jpg"
-            exposure="7"
+            environment-image="purple1.jpg"
+            exposure="3"
             
             camera-controls
             // interaction-prompt="none"
@@ -21,7 +21,7 @@ function ModelContent() {
             camera-orbit="45deg 85deg 0m"
             camera-target="0m 3m 0m"
             field-of-view="45deg"
-            interpolation-decay="100"
+            interpolation-decay="130"
             shadow-intensity="0.5"
             ref={modelRef}
         >

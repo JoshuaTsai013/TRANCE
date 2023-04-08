@@ -4,12 +4,13 @@ import Whatdo from './Whatdo';
 import TextBlock from './Typelist';
 import Slide from './Slide';
 import Footer from '../Footer';
+import { Skills } from './Skills';
 
 function Parallaxx() {
   return (
     <div className="container">
-      <Parallax pages={5.9} style={{ top: '0', left: '0' }} className="animation parallax hideScrollBar">
-        <ParallaxLayer offset={0} speed={0} style={{ top: '-5px'}}>
+      <Parallax pages={6.9} style={{ top: '0', left: '0' }} className="animation parallax hideScrollBar">
+        <ParallaxLayer offset={0} speed={0} style={{ top: '-5px' }}>
           <div className="animation_layer parallax" id="artback"></div>
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={-0.1} >
@@ -36,16 +37,19 @@ function Parallaxx() {
         <ParallaxLayer offset={0} speed={-0.2}>
           <div className="animation_layer parallax" id="jungle5"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={1} factor={1.4} style={{top: '0'}}>
+        <ParallaxLayer offset={1} factor={1.4} style={{ top: '0' }}>
           <Whatdo />
         </ParallaxLayer>
-        <ParallaxLayer offset={2.4} factor={1.4} style={{top: '-1px'}}>
+        <ParallaxLayer offset={2.4} factor={1} style={{ top: '-1px' }}>
+          <Skills />
+        </ParallaxLayer>
+        <ParallaxLayer offset={3.4} factor={1.6} style={{ top: '-2px' }}>
           <TextBlock />
         </ParallaxLayer>
-        <ParallaxLayer offset={3.8} factor={1.65} style={{top: '-2px'}}>
+        <ParallaxLayer offset={5.0} factor={1.4} style={{ top: '-1px' }}>
           <Slide />
         </ParallaxLayer>
-        <ParallaxLayer offset={5.4} factor={0.45} style={{top: '0px', background: 'linear-gradient(180deg, #181850, #12124d, #3d108f, #181850)'}}>
+        <ParallaxLayer offset={6.4} factor={0.45} style={{ top: '0px', background: 'linear-gradient(180deg, #181850, #12124d, #3d108f, #181850)' }}>
           <Footer />
         </ParallaxLayer>
       </Parallax>

@@ -1,0 +1,57 @@
+#skills {
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, #181850, #12124d, #3d108f, #181850);
+  }
+
+  .skill{
+    padding: 0 0 100px 0;
+    position: relative;
+  }
+
+  .skill-bx{
+    box-shadow: 0px 0px 40px rgb(109, 114, 131);
+    background: linear-gradient(180deg, #201538, #16111f, #230b50, #181850);
+    border-radius: 64px;
+    text-align: center;
+    padding: 60px 50px;
+    height: 150%;
+    margin: -60px;
+  }
+
+  .skill h2{
+    color: aliceblue;
+font-size: 55px;
+font-weight: 500;
+font-family: '123';
+letter-spacing: 1.8px;
+text-shadow: 0px 0px 9px white;
+  }
+
+  .skill p{
+    color: rgb(215, 221, 221);
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+  }
+
+  .skill h5{
+    font-size: 18px;
+    color: azure;}
+
+.skill-slider{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.skill-slider .item img{
+    width: 50%;
+    margin: 0 auto 15px auto;
+}

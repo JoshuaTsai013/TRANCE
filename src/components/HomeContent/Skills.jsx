@@ -1,9 +1,8 @@
-
 import Col from "react-bootstrap/esm/Col";
 import { Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../../../public/images/meter1.svg";
+import meter1 from "../../assets/images/meter1.svg";
 
 import './styles/skills.css';
 import CountUp from 'react-countup';

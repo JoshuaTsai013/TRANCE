@@ -1,3 +1,32 @@
+@keyframes typing {
+    from {
+  
+      width: 1ch;
+      height: 3ch;
+    }
+  
+    to {
+  
+      width: 42ch;
+      height: 20ch;
+    }
+  
+    from {
+  
+      width: 1ch;
+      height: 3ch;
+    }
+  
+    to {
+  
+      width: 42ch;
+      height: 20ch;
+    }
+  
+  }
+  
+
+
 .whatdo-container {
     width: 100%;
     height: 100%;
@@ -6,17 +35,22 @@
 }
 
 .whatdo-content h3 {
+    animation: fadein 3s ease-in;
     padding-top: 10%;
     font-size: 20px;
     line-height: 170%;
     text-align: left;
-    font-family: 'ariel';
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
 .whatdo-title {
-    z-index: 1;
-
+    width: 16ch;
+    animation: typing 4s steps(17), blink .6s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    
     position: absolute;
     color: azure;
     font-family: '123';
@@ -29,7 +63,7 @@
 
     padding: 10%;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -42,9 +76,10 @@
 
 
 #modelContainerr {
+    animation: fadein 3s ease-in;
     z-index: 1;
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     height: 100vh;
     width: 100%;
@@ -58,66 +93,91 @@
 #button-addon2 {
 
     z-index: 1;
-    margin-top: 5%;
+    margin-top: 10%;
     width: 100%;
-
+    animation: fadein 3s ease-in;
     height: 50px;
 
 }
 
 
 #button-addon2 h2 {
-    font-family: '123';
-    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    font-size: 17px;
 }
 
-.search-title {
 
-
-    position: absolute;
-
-}
 
 
 /*平板*/
 @media (max-width:768px) {
-    .whatdo-title {
+    #button-addon2 {
+        z-index: 1;
+        margin-top: 10%;
+        width: 100%;
+        height: 80%;
+       
 
-        font-size: 30px
+    }
+
+ 
+    .whatdo-content {
+        top: 20%;
+    }
+
+    .whatdo-title {
+       margin-top: 10%;
+        font-size: 34px
     }
 
     .whatdo-content h3 {
-        font-size: 13px;
+        padding-top: 30%;
+        font-size: 17px;
+
     }
 
-    .searchbar {
-        z-index: 1;
-        margin-top: 20%;
-        width: 100%;
-        height: 50px;
-    }
+
 
     #modelContainerr {
         width: 100%;
-        top: 10%;
-        right: 20%;
+        top: 40%;
+        left: 25%;
     }
 
-
+    #button-addon2 h2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        letter-spacing: 2px;
+        font-size: 15px;
+    }
 }
 
 /*手機*/
 @media (max-width:390px) {
-    .whatdo-title {
+
+    #button-addon2 {
+        z-index: 1;
         margin-top: 10%;
         width: 100%;
-        font-size: 16px
+
+        height: 30px;
+
+    }
+
+    .whatdo-content {
+        top: 20%;
+    }
+
+    .whatdo-title {
+        margin-top: 0%;
+        width: 100%;
+        font-size: 17px
     }
 
     .whatdo-content h3 {
-        margin-top: 20%;
+        margin-top: 10%;
 
-        font-size: 6px;
+        font-size: 5px;
     }
 
     .search-title {
@@ -126,8 +186,14 @@
     }
 
     .searchbar {
-        margin-top: 25%;
+        margin-top: 0%;
     }
 
+    #modelContainerr {
+        width: 100%;
+        top: 30%;
+        right: 0%;
+        left: 25%;
+    }
 
 }

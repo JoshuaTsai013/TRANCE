@@ -7,10 +7,7 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import './styles/whatdo.css';
 
-// function Model(props) {
-//   const { scene } = useGLTF("/bmw.glb");
-//   return <primitive object={scene}{...props} />
-// }
+
 
 function Whatdo() {
   return (
@@ -36,13 +33,15 @@ function Whatdo() {
       <model-viewer id="modelContainerr"
         src="bmw.glb"
         camera-orbit="25deg 75deg 5.5m"
+        environment-image="night.jpg"
+        exposure="9"
         // camera-controls
         camera-target="auto auto auto"
         disable-zoom
         auto-rotate
         rotation-per-second
         interaction-prompt="none"
-        scale="1.2 1.2 1.2"
+        scale="1.6 1.6 1.3"
         shadow-intensity="2">
       </model-viewer>
     </div >

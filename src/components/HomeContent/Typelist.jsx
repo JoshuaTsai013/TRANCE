@@ -5,7 +5,7 @@ function TextBlock() {
     return (
         <div id="textblock">
             
-            <h1 id="textblock-title">TYPELIST <br /><br /></h1>
+            <h1 id="textblock-title">OURWORK <br /><br /></h1>
             <p id="textblock-p">everything you want is here. </p>
             <div id="textblock-content">
                 <div className="card ">

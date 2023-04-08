@@ -3,7 +3,7 @@ import { FacebookOutlined, InstagramOutlined, PrinterOutlined, TwitterOutlined, 
 
 export default function Footer() {
     return (
-        <footer className={styles.footer}>
+        <footer className={styles.footer} col-sm-12 col-md-6>
             <div className={styles.footerUp}>
                 <div className={styles.footerDown}>
                     <div className={styles.yourHome}>
@@ -28,7 +28,7 @@ export default function Footer() {
                                     <li className={styles.options}>About</li>
                                     <li className={styles.options}>Partners</li>
                                     <li className={styles.options}>Contact us</li>
-                                    <li className={styles.options}>Careers</li>
+                                   
                                 </ul>
 
                                 <ul className={styles.footerAbout}>
@@ -37,8 +37,7 @@ export default function Footer() {
                                     <hr className={styles.footerlineTwo} />
                                     <li className={styles.options}>Precautions</li>
                                     <li className={styles.options}>Newsletter</li>
-                                    <li className={styles.options}>Wholesale Program</li>
-                                    <li className={styles.options}>Trade Program</li>
+                                    
                                 </ul>
 
                                 <ul className={styles.footerAbout}>

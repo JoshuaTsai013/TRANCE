@@ -7,11 +7,13 @@ h4 {
 .footer {
   height: auto;
   width: 100%;
+  height: 120%;
   margin: 0;
 }
 
 .footer-container {
   width: 100%;
+  height: 100%;
 }
 
 /* footer up */
@@ -143,12 +145,31 @@ ul {
   color: #fffffe;
 }
 
-@media (max-width: 390px) {
-  .your-home {
-    margin-left: 0%;
 
+
+@media (max-width: 992px) {
+
+  .icons {
+    display: flex;
+ height: 20%;
+    margin: 0;
   }
 
+  .footerDown{
+  margin-bottom: 10%;
+  }
+
+  .footerAbout {
+    width: 45%;
+  }
+
+
+}
+
+/*手機*/
+
+@media (max-width: 390px) {
+ 
   .headerTitle {
     white-space: nowrap;
     justify-content: center;
@@ -159,10 +180,6 @@ ul {
     justify-content: center;
   }
 
-  .footer {
-    margin-bottom: 20%;
-
-  }
 
   .footerAbout {
     display: block;
@@ -175,63 +192,34 @@ ul {
   }
 
   .footerOptions {
-    margin-left: 0%;
+    
   }
+.optionsTitle{
+  font-size: 10px;
 }
+ 
+}
+
+/*平板*/
 
 @media (max-width: 768px) {
   .footer-down-right {
     flex-direction: column;
   }
 
-  .footerIcon {
-    width: 1.2rem;
-    height: 1.2rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .subscribe {
-    width: 80%;
-  }
-
-  .subscribe-box {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 0.6rem;
-  }
-
-  .subscribe-email {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-
-  footer .icons {
-    width: 100%;
-  }
-
-  .footer-down {
-    width: 80%;
-  }
-
   .footerOptions {
+    height: 50%;
     display: flex;
-    flex-wrap: wrap;
+ margin-top: 30%;
+ margin-left: -90%;
+
   }
 
   .footerAbout {
-    width: 50%;
+    display: block;
+
   }
 
-  .footer-help {
-    width: 50%;
-  }
 
-  .footer-shop {
-    width: 50%;
-  }
 
-  .div-subscribe-btn {
-    width: 35%;
-  }
 }

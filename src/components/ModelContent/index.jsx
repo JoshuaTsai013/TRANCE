@@ -12,8 +12,9 @@ function ModelContent() {
         <model-viewer id="modelContainer"
             src="Room.glb"
             poster="LOGO.png"
-            environment-image="neutral"
-            exposure="1"
+            environment-image="night.jpg"
+            exposure="7"
+            
             camera-controls
             // interaction-prompt="none"
             touch-action="none"

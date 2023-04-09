@@ -52,6 +52,7 @@ footer {
   z-index: 1;
   display: flex;
   justify-content: center;
+  padding: 2rem 2rem 1rem;
 }
 
 .socialicons a {

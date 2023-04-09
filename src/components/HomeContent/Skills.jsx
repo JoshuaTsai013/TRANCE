@@ -8,6 +8,8 @@ import './styles/skills.css';
 import CountUp from 'react-countup';
 import { useState } from "react";
 import ScrollTrigger from 'react-scroll-trigger';
+import FadeIn from "../Animation/FadeIn";
+
 
 export const Skills = () => {
 
@@ -36,6 +38,7 @@ export const Skills = () => {
 
     return (
         <section className="skill" id="skills">
+     <FadeIn>
             <Container>
                 <Row>
                     <Col>
@@ -80,6 +83,7 @@ export const Skills = () => {
                     </Col>
                 </Row>
             </Container>
+            </FadeIn>
         </section>
     )
 }

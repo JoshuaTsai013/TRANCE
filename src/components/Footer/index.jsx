@@ -1,69 +1,42 @@
-import styles from './Footerstyle.module.css';
-import { FacebookOutlined, InstagramOutlined, PrinterOutlined, TwitterOutlined, YoutubeOutlined } from '@ant-design/icons';
+import React from 'react';
+import styles from './Footerstyle.module.css'; // 引入CSS樣式
 
 export default function Footer() {
     return (
-        <footer className={styles.footer} col-sm-12 col-md-6>
-            <div className={styles.footerUp}>
-                <div className={styles.footerDown}>
-                    <div className={styles.yourHome}>
-                        <h4 className={styles.headerTitle} style={{ margin: "0" }}>TRANCE</h4>
-                        <p className={styles.headerTitle} style={{ margin: "0", fontSize: "5px" }}>Everything you want is here.</p>
-
-                    </div>
-                    <div className={styles.footerDownRight}>
-                        <div className={styles.icons}>
-                            <a href="#" className={styles.footerIcon} target="_blank" title="youtube" itemProp="significantLink"><YoutubeOutlined /></a>
-                            <a href="#" className={styles.footerIcon} target="_blank" title="Facebook" itemProp="significantLink"><FacebookOutlined /></a>
-                            <a href="#" className={styles.footerIcon} target="_blank" title="Twitter" itemProp="significantLink"><TwitterOutlined /></a>
-                            <a href="#" className={styles.footerIcon} target="_blank" title="Instagram" itemProp="significantLink"><InstagramOutlined /></a>
-                        </div>
-
-                        <div className={styles.licontainer}>
-                            <div className={styles.footerOptions}>
-                                <ul className={styles.footerAbout}>
-                                    <li style={{ marginBottom: "0.5rem" }} className={styles.optionsTitle}>ABOUT</li>
-                                    <li className={styles.options}></li>
-                                    <hr className={styles.footerlineTwo} />
-                                    <li className={styles.options}>About</li>
-                                    <li className={styles.options}>Partners</li>
-                                    <li className={styles.options}>Contact us</li>
-                                   
-                                </ul>
-
-                                <ul className={styles.footerAbout}>
-                                    <li style={{ marginBottom: "0.5rem", marginLeft: "0.5rem" }} className={styles.optionsTitle}>SHOP</li>
-                                    <li className={styles.options}></li>
-                                    <hr className={styles.footerlineTwo} />
-                                    <li className={styles.options}>Precautions</li>
-                                    <li className={styles.options}>Newsletter</li>
-                                    
-                                </ul>
-
-                                <ul className={styles.footerAbout}>
-                                    <li style={{ marginBottom: "0.5rem" }} className={styles.optionsTitle}>MUSIC</li>
-                                    <li className={styles.options}></li>
-                                    <hr className={styles.footerlineTwo} />
-                                    <li className={styles.options}>Saved</li>
-                                    <li className={styles.options}>Liked</li>
-                                </ul>
-
-                                <ul className={styles.footerAbout}>
-                                    <li style={{ marginBottom: "0.5rem" }} className={styles.optionsTitle}>NEWS</li>
-                                    <li className={styles.options}></li>
-                                    <hr className={styles.footerlineTwo} />
-                                    <li className={styles.options}>News</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style={{ width: "100%", display: "flex", justifyContent: "center", flexDirection: "column" }}>
-                        <hr className={styles.footerline} />
-                        <p className={styles.copyright} style={{ marginBottom: "0.5rem" }}>Copyright © 2023 TRANCE All Rights Reserved.</p>
-                    </div>
+      
+            <footer>
+              <div className={styles.left}>
+                <h2>TRANCE</h2>
+                <p>Everything you want is here.</p>
+                <div className={styles.socialicons}>
+                  <a href="#"><i className="fab fa-facebook-f"></i></a>
+                  <a href="#"><i className="fab fa-twitter"></i></a>
+                  <a href="#"><i className="fab fa-youtube"></i></a>
+                  <a href="#"><i className="fab fa-instagram"></i></a>
                 </div>
-            </div>
-        </footer>
+              </div>
+              <div className={styles.right}>
+                <ul>
+                  <li><h3>About</h3></li>
+            
+                  <li><a href="#">Partners</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
+                <ul>
+                  <li><h3>Shop</h3></li>
+                  <li><a href="#">Precautions</a></li>
+                  <li><a href="#">Newsletter</a></li>
+                </ul>
+                <ul>
+                  <li><h3>Music</h3></li>
+                  <li><a href="#">Saved</a></li>
+                  <li><a href="#">Liked</a></li>
+                </ul>
+              </div>
+              <div className={styles.bottom}>
+                <p>Copyright © 2023 TRANCE All Rights Reserved.</p>
+              </div>
+            </footer>
+       
     );
 }

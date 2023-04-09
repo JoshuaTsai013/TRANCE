@@ -7,6 +7,7 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import './styles/whatdo.css';
 import { NavLink } from 'react-router-dom';
+import FadeIn from "../Animation/FadeIn";
 
 
 
@@ -15,6 +16,7 @@ function Whatdo() {
     <div className="whatdo-container">
 
       <div className="whatdo-content">
+        <FadeIn >
         <h1 className="whatdo-title">➥ What do we do?</h1>
         <h3>TRANCE is a creative studio that specializes in 3D design, <br />music production, and art direction. Our team offers services <br />including 3D modeling and animation, music composition, and art direction<br /> for branding and marketing campaigns. Contact us today to learn more.</h3>
         <br />
@@ -26,6 +28,7 @@ function Whatdo() {
               <NavLink to="/Music"><h2>LEARN MORE ↗</h2></NavLink>
             </Button>
         </InputGroup>
+        </FadeIn>
       </div>
 
       {/* model */}

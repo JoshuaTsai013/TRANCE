@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import './styles/whatdo.css';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -21,11 +22,9 @@ function Whatdo() {
         <InputGroup className="mb-3 searchbar">
           <h1 className="search-title"></h1>
 
-          <a href='/AboutUs' target="_blank">
             <Button variant="outline-light" id="button-addon2" onClick={() => onClickOpenVacancy(id)}>
-              <h2>LEARN MORE ↗</h2>
+              <NavLink to="/Music"><h2>LEARN MORE ↗</h2></NavLink>
             </Button>
-          </a>
         </InputGroup>
       </div>
 

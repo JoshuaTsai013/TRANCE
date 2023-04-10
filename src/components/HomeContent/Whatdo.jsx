@@ -37,7 +37,7 @@ function Whatdo() {
         camera-orbit="25deg 75deg 5.5m"
         environment-image="night.jpg"
         exposure="9"
-       camera-controls
+        camera-controls
         camera-target="auto auto auto"
         disable-zoom
         auto-rotate

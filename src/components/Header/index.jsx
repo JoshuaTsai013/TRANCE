@@ -84,7 +84,7 @@ function Header() {
                 <div className={styles.login}>
 
                 
-
+{/* 
                   <Nav className="me-3 gap-2 login">
                     <Nav.Link as={NavLink} to="/Sign" className="btn btn-outline-light text-white" href="#">
                       {!session ? <div>
@@ -97,7 +97,7 @@ function Header() {
                     </Nav.Link>
 
 
-                  </Nav>
+                  </Nav> */}
                 </div>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

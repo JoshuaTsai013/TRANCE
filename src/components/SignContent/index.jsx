@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import './sign.css';
 import { Menu, Form, Container } from 'semantic-ui-react';
-import 'semantic-ui-css/semantic.min.css';
 import { createClient } from "@supabase/supabase-js";
+
 
 
 function SignContent() {
@@ -12,22 +12,28 @@ function SignContent() {
     const [password, setPassword] = React.useState('');
 
     async function loginWithGoogle() {
-        const { data, error } = await supabase.auth.signInWithOAuth({
-            provider: 'google',
-          })
+        const { user, session, error } = await supabase.auth.signIn({
+            provider: 'google'
+        })
     }
 
     async function logout() {
         const { error } = await supabase.auth.signOut()
     }
 
-   
+    function onSubmit(){
+        if (activeItem === 'register'){
+
+        }else if(activeItem ==='signin'){
+            
+        }
+    }
 
     return (
 
         <Container className="sign-bg">
 
-            <Menu widths="2">
+            <Menu widths="2" className="sign">
                 <Menu.Item
                     active={activeItem === 'register'}
                     onClick={() => setActiveItem('register')}
@@ -43,11 +49,12 @@ function SignContent() {
 
                 </Menu.Item>
             </Menu>
-            <Form>
+           
                 <Form.Input
                     label="信箱"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    className="emailinput"
                     placeholder="請輸入信箱" />
 
                 <Form.Input
@@ -58,20 +65,20 @@ function SignContent() {
                     type="password"
                 />
 
-                <Form.Button>
+                <Form.Button className="signbutton">
                     {activeItem === 'register' && '註冊'}
                     {activeItem === 'signin' && '登入'}
                 </Form.Button>
 
                 <Form.Button
+                className="google"
                     onClick={loginWithGoogle}>
-                    {activeItem === 'register' && 'GOOGLE註冊'}
-
+                    {activeItem === 'register' && 'GOOGLE登入'}
+                    {activeItem === 'signin' && 'GOOGLE登入'}
                 </Form.Button>
 
-                 
+                
 
-            </Form>
 
 
         </ Container >

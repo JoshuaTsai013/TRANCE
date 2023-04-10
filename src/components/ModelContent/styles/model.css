@@ -95,3 +95,13 @@
     animation: fadein 2s;
     /* transform: translate(-50%, -50%); */
 }
+
+@media (max-width: 768px) {
+    .interactionWindow{
+       
+        font-size: 10px;
+ 
+        top: 140px;
+ 
+    }
+}

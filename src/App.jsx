@@ -4,7 +4,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Music from './pages/Music'
 import Model from './pages/Model'
-// import Shop from './pages/Shop'
+import Sign from './pages/Sign'
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/AboutUs" element={<About />} />
             <Route path="/Music" element={<Music />} />
-            {/* <Route path="/Shop" element={<Shop />} /> */}
+           <Route path="/Sign" element={<Sign />} />
             <Route path="/Model" element={<Model />} />
       </Routes>
     </BrowserRouter>

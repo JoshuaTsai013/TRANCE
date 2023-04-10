@@ -6,44 +6,44 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import './styles/whatdo.css';
+import { NavLink } from 'react-router-dom';
+import FadeIn from "../Animation/FadeIn";
 
-// function Model(props) {
-//   const { scene } = useGLTF("/bmw.glb");
-//   return <primitive object={scene}{...props} />
-// }
+
 
 function Whatdo() {
   return (
     <div className="whatdo-container">
 
       <div className="whatdo-content">
+        <FadeIn >
         <h1 className="whatdo-title">➥ What do we do?</h1>
-        <h3>This is a world with everything<br />We have music, models, art, stores, everything you want is here</h3>
+        <h3>TRANCE is a creative studio that specializes in 3D design, <br />music production, and art direction. Our team offers services <br />including 3D modeling and animation, music composition, and art direction<br /> for branding and marketing campaigns. Contact us today to learn more.</h3>
+        <br />
 
         <InputGroup className="mb-3 searchbar">
-          <h1 className="search-title">↺ Search</h1>
-          <Form.Control
-            placeholder="Search"
-            aria-label="Recipient's username"
-            aria-describedby="basic-addon2"
-          />
-          <Button variant="outline-light" id="button-addon2">
-            <SearchOutlined />
-          </Button>
+          <h1 className="search-title"></h1>
+
+            <Button variant="outline-light" id="button-addon2" onClick={() => onClickOpenVacancy(id)}>
+              <NavLink to="/Music"><h2>LEARN MORE ↗</h2></NavLink>
+            </Button>
         </InputGroup>
+        </FadeIn>
       </div>
 
       {/* model */}
       <model-viewer id="modelContainerr"
         src="bmw.glb"
-        camera-orbit="25deg 75deg 4.1m"
-        camera-controls
+        camera-orbit="25deg 75deg 5.5m"
+        environment-image="night.jpg"
+        exposure="9"
+        // camera-controls
         camera-target="auto auto auto"
         disable-zoom
         auto-rotate
         rotation-per-second
         interaction-prompt="none"
-        scale="1.2 1.2 1.2"
+        scale="1.6 1.6 1.3"
         shadow-intensity="2">
       </model-viewer>
     </div >

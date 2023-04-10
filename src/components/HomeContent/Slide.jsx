@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/slide.css'
+import FadeIn from '../Animation/FadeIn';
 
 const TAGS = ['Music', 'Model', 'Artwork', 'Learn', 'Project', 'React', 'Next.js', 'game', 'UI/UX', 'SVG', 'animation', 'webdev'];
 const DURATION = 25000;
@@ -11,14 +12,17 @@ const shuffle = (arr) => [...arr].sort( () => .5 - Math.random() );
 
 const InfiniteLoopSlider = ({children, duration, reverse = false}) => {
   return (
+   
     <div className='loop-slider' style={{
         '--duration': `${duration}ms`,
         '--direction': reverse ? 'reverse' : 'normal'
       }}>
+         <FadeIn>
       <div className='inner'>
         {children}
         {children}
       </div>
+      </FadeIn>
     </div>
   );
 };

@@ -1,17 +1,6 @@
-/* Hide scrollbar for Chrome, Safari and Opera */
-.animation::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.animation {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
-
-
 /*視差滾動*/
+
+
 
 .animation,
 .animation_layer {
@@ -133,7 +122,21 @@
 #jungle4 {
   background-image: url(../../../../images/night6.png);
   background-position: center;
+  animation: float 3s ease-in-out infinite;
 }
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 
 #jungle5 {
   background-image: url(../../../../images/night7.png);

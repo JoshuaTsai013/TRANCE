@@ -3,6 +3,7 @@ import HomeContent from "../components/HomeContent";
 
 function Home() {
     return (
+        
         <>
             <Header />
             <HomeContent />

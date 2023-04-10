@@ -10,6 +10,21 @@ function Parallaxx() {
       <ParallaxLayer offset={0} factor={1} style={{ top: '-5px' }}>
         <div className="animation_layer aboutback"></div>
       </ParallaxLayer>
+      <ParallaxLayer offset={0.2} speed={1} className="animation">
+        <div className="aboutModel" style={{ right: '5%' }}>
+          <model-viewer
+            src="planet2.glb"
+            // camera-orbit="40deg 75deg 10m"
+            environment-image="purple1.jpg"
+            exposure="1"
+            auto-rotate
+            rotation-per-second="40deg"
+            scale="1 1 1"
+            style={{ height: '300px', width: '600px' }}
+          >
+          </model-viewer>
+        </div>
+      </ParallaxLayer>
       <ParallaxLayer offset={0.3} speed={1} className="animation">
         <div className="title" style={{ left: '10%' }}>
           <TypingEffect title="WELCOME" />
@@ -17,7 +32,7 @@ function Parallaxx() {
           <TypingEffect title="TRANACE WORLD" />
         </div>
       </ParallaxLayer>
-      <ParallaxLayer offset={0.63} speed={0.2} className="animation">{/* sticky={{ start: 1, end: 3 }} */}
+      <ParallaxLayer offset={0.63} speed={0.2} className="animation">
         <div className="aboutText" style={{ right: '5%' }}>
           &#8251; Trance is a music genre that emerged in the late 1980s and early 1990s <br />
           &#8251; It is characterized by fast tempo, repetitive melodies, and uplifting or hypnotic atmospheres <br />
@@ -28,17 +43,31 @@ function Parallaxx() {
       <ParallaxLayer offset={1} factor={1.2} style={{ top: '0' }}>
         <div className="animation_layer aboutback"></div>
       </ParallaxLayer>
-      <ParallaxLayer offset={1.4} speed={0.3} className="animation">{/* sticky={{ start: 1, end: 3 }} */}
+      <ParallaxLayer offset={1.2} speed={0.3} className="animation">
+        <div className="aboutModel" style={{ left: '15%' }}>
+          <model-viewer
+            src="planet.glb"
+            environment-image="night.jpg"
+            exposure="9"
+            auto-rotate
+            rotation-per-second="40deg"
+            scale="1.2 1.2 1.2"
+            style={{ height: '300px' }}
+          >
+          </model-viewer>
+        </div>
+      </ParallaxLayer>
+      <ParallaxLayer offset={1.4} speed={0.7} className="animation">
         <div className="title" style={{ right: '15%' }}>
           <h1>ABOUT</h1>
           <h1>US</h1>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer offset={1.7} speed={0.2} className="animation">{/* sticky={{ start: 1, end: 3 }} */}
-        <div className="aboutText" style={{ left: '5%' }}>
+      <ParallaxLayer offset={1.7} speed={0.2} className="animation">
+        <div className="aboutText" style={{ left: '10%' }}>
           We are a group of talented artists who made graphic design and music, we are TRANCE.<br />
           We love to create beautiful and inspiring artworks for various projects and clients.<br />
-          We have skills in different tools and genres, such as Photoshop, Illustrator, Pro Tools, Ableton Live, etc.<br />
+          We have skills in different tools and genres, such as Photoshop, Illustrator, Unreal Engine, Logic Pro, etc.<br />
           We are passionate about expressing ourselves and sharing our vision with the world.<br />
           We are always open to new challenges and opportunities to collaborate with other creative people.
         </div>
@@ -46,13 +75,28 @@ function Parallaxx() {
       <ParallaxLayer offset={2.2} factor={1.2} style={{ top: '0' }}>
         <div className="animation_layer aboutback"></div>
       </ParallaxLayer>
-      <ParallaxLayer offset={2.6} speed={0.4} className="animation">
+
+      <ParallaxLayer offset={2.45} speed={0.4} className="animation">
+        <div className="aboutModel" style={{ right: '8%' }}>
+          <model-viewer
+            src="dh100.glb"
+            exposure="0.8"
+            auto-rotate
+            rotation-per-second="20deg"
+            scale="2 2 2"
+            style={{ height: '300px', width: '400px' }}
+          >
+          </model-viewer>
+        </div>
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={2.75} speed={0.7} className="animation">
         <div className="title" style={{ left: '10%' }}>
           <h1>JOSHUA</h1>
         </div>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={2.9} speed={0.2} className="animation">{/* sticky={{ start: 1, end: 3 }} */}
+      <ParallaxLayer offset={2.95} speed={0.2} className="animation">{/* sticky={{ start: 1, end: 3 }} */}
         <div className="aboutText" style={{ right: '5%' }}>
           Hi, I'm a musician and a graphic designer who loves to create and share my art with the world.<br />
           I am a compose and I love playing guitar, I compose songs in different genres and styles.<br />
@@ -65,13 +109,32 @@ function Parallaxx() {
       <ParallaxLayer offset={3.4} factor={1.2} style={{ top: '0' }}>
         <div className="animation_layer aboutback"></div>
       </ParallaxLayer>
-      <ParallaxLayer offset={3.8} speed={0.3} className="animation">{/* sticky={{ start: 1, end: 3 }} */}
+
+
+
+      <ParallaxLayer offset={3.75} speed={0.4} className="animation">
+        <div className="aboutModel" style={{ right: '8%' }}>
+          <model-viewer
+            src="camera.glb"
+            environment-image="purple1.jpg"
+            exposure="3"
+            auto-rotate
+            rotation-per-second="20deg"
+            scale="1.6 1.6 1.6"
+            style={{ height: '300px', width: '300px' }}
+          >
+          </model-viewer>
+        </div>
+      </ParallaxLayer>
+
+
+      <ParallaxLayer offset={3.96} speed={0.7} className="animation">
         <div className="title" style={{ left: '10%' }}>
           <h1>LENA</h1>
         </div>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={4} speed={0.2} className="animation">{/* sticky={{ start: 1, end: 3 }} */}
+      <ParallaxLayer offset={4.05} speed={0.2} className="animation">
         <div className="aboutText" style={{ right: '5%' }}>
           - Hi, I'm a talented graphic designer, creator and artist.<br />
           - I love to design logos, posters, flyers, websites and more.<br />
@@ -86,10 +149,19 @@ function Parallaxx() {
         <div className="animation_layer aboutback"></div>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={5} speed={0.4} className="animation">
+      <ParallaxLayer offset={5} speed={0.6} className="animation">
         <div className="title" style={{ left: '10%' }}>
           <h1>CONTACT</h1>
           <h1>US</h1>
+        </div>
+      </ParallaxLayer>
+
+
+      <ParallaxLayer offset={5.4} speed={0.4} className="animation">
+        <div className="aboutText" style={{ left: '12%' }}>
+          Tel 02-0000000<br />
+          Address : No.134, Sec. 2, Heping E. Rd., Da-an District, Taipei City
+
         </div>
       </ParallaxLayer>
 
@@ -100,7 +172,7 @@ function Parallaxx() {
       <ParallaxLayer offset={5.8} factor={0.45} style={{ bottom: '0' }}>
         <Footer />
       </ParallaxLayer>
-    </Parallax>
+    </Parallax >
   );
 }
 

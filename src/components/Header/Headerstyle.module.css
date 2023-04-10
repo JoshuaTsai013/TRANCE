@@ -61,7 +61,24 @@
     background:none;
 }
 
+.login {
+   
+    font-family: '123';
 
+
+}
+
+
+.login h2 {
+    color: rgb(230, 226, 222);
+    font-size: 12px;
+}
+
+.login h3 {
+color: rgb(240, 239, 238);
+    font-size: 14px;
+    letter-spacing: 5px;
+}
 
 @media (max-width: 768px) {
     .navlink{

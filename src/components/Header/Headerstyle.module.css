@@ -1,14 +1,14 @@
 @font-face {
     font-family: '123';
     src: local("123"),
-      url('/fonts/1.OTF') format("woff");
-  }
+        url('/fonts/1.OTF') format("woff");
+}
 
 .navlink {
-    
+
     display: flex;
     flex-grow: 1;
-    justify-content:end;
+    justify-content: end;
     padding-right: 30px;
     text-align: left;
     font-weight: 800;
@@ -28,20 +28,18 @@
     border-radius: 15%; */
 }
 
-.navlink ::before{
-  
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 1px;
-        background: white; 
-        transform:  scale(0);
+.navlink ::before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: white;
+    transform: scale(0);
 }
 
-.navlink :hover ::before{
-    transform:  scaleX(1);
+.navlink :hover ::before {
+    transform: scaleX(1);
 }
-   
 
 .navbarCustom {
     position: fixed;
@@ -53,19 +51,16 @@
     background-color: none;
 }
 
-#searchbar{
+#searchbar {
     width: 70%;
     color: #ffffff;
-   border-width: 2px;
-   border-color: rgb(226, 226, 226);
-    background:none;
+    border-width: 2px;
+    border-color: rgb(226, 226, 226);
+    background: none;
 }
 
 .login {
-   
     font-family: '123';
-
-
 }
 
 
@@ -75,13 +70,13 @@
 }
 
 .login h3 {
-color: rgb(240, 239, 238);
+    color: rgb(240, 239, 238);
     font-size: 14px;
     letter-spacing: 5px;
 }
 
 @media (max-width: 768px) {
-    .navlink{
-        white-space:nowrap;
+    .navlink {
+        white-space: nowrap;
     }
 }

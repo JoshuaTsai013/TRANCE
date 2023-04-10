@@ -85,12 +85,12 @@ function Header() {
 
                 
          <Nav className="me-3 gap-2 login">
-                    <Nav.Link as={NavLink} to="/Sign" className="btn btn-outline-light text-white" href="#">
+                    <Nav.Link as={NavLink} to="/Sign" className={styles.navlink} href="#">
                       {!session ? <div>
-                        <h3>SIGN UP/IN</h3> 
+                        <>SIGN UP/IN</> 
                          </div> :
                           <div> <h3>{session.user.email}</h3>
-                          <Button onClick={logout}>  <h3>signOut</h3></Button>
+                          <Button onClick={logout}>  <>signOut</></Button>
                           </div>
                           }
                     </Nav.Link>

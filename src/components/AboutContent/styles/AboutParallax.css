@@ -52,7 +52,7 @@
 }
 
 /*視差滾動手機*/
-@media (max-width:768px) {
+@media (max-width:376px) {
   .animation_layer.parallax {
     background-size: 150% auto;
     height: 667px;
@@ -69,7 +69,8 @@
   #textblock-p {
     font-size: 8px;
   }
-
+}
+@media (max-width:768px) {
   .aboutText{
     width: 300px;
   }

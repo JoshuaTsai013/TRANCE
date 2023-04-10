@@ -28,7 +28,7 @@
   width: auto;
   z-index: 1;
   position: absolute;
-  font-size: 20px;
+  font-size: 1rem;
   text-align: left;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: antiquewhite;
@@ -52,7 +52,7 @@
 }
 
 /*視差滾動手機*/
-@media (max-width:376px) {
+@media (max-width:768px) {
   .animation_layer.parallax {
     background-size: 150% auto;
     height: 667px;
@@ -68,6 +68,10 @@
 
   #textblock-p {
     font-size: 8px;
+  }
+
+  .aboutText{
+    width: 300px;
   }
 }
 

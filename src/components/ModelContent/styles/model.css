@@ -5,6 +5,52 @@
     background: linear-gradient(180deg, #0a0a11, #12124d, #1b152d, #100a29, #181850);
 }
 
+.interactionWindow{
+    background: #fff;
+    opacity: 80%;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.5em 1em;
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    width: max-content;
+    height: max-content;
+    transform: translate(-50%,0%);
+    animation: fadein 2s;
+}
+
+.presentWindow{
+    background: #fff;
+    opacity: 80%;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    padding: 0.5em 1em;
+    max-width: 300px;
+    overflow-wrap: break-word;
+    position: fixed;
+    top: 140px;
+    right: 50px;
+    width: max-content;
+    height: max-content;
+    /* transform: translate(-50%, -50%); */
+
+   }
+
 .viewButton {
     background: #fff;
     border-radius: 4px;
@@ -22,7 +68,8 @@
     position: absolute;
     width: max-content;
     height: max-content;
-    transform: translate3d(-50%, -50%, 0);
+    transform: translate(-50%, -50%);
+    animation: fadein 3s;
 }
 /* composes: xxx; */
 .returnButton {
@@ -42,9 +89,19 @@
     padding: 0.5em 1em;
     position: absolute;
     top: 95px;
-    right: 0px;
+    right: 50px;
     width: max-content;
     height: max-content;
-    transform: translate3d(-50%, -50%, 0);
+    animation: fadein 2s;
+    /* transform: translate(-50%, -50%); */
+}
 
+@media (max-width: 768px) {
+    .interactionWindow{
+       
+        font-size: 10px;
+ 
+        top: 140px;
+ 
+    }
 }

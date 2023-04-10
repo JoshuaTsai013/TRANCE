@@ -17,7 +17,7 @@ function Parallaxx() {
           <TypingEffect title="TRANACE WORLD" />
         </div>
       </ParallaxLayer>
-      <ParallaxLayer offset={0.7} speed={0.2} className="animation">{/* sticky={{ start: 1, end: 3 }} */}
+      <ParallaxLayer offset={0.63} speed={0.2} className="animation">{/* sticky={{ start: 1, end: 3 }} */}
         <div className="aboutText" style={{ right: '5%' }}>
           &#8251; Trance is a music genre that emerged in the late 1980s and early 1990s <br />
           &#8251; It is characterized by fast tempo, repetitive melodies, and uplifting or hypnotic atmospheres <br />

@@ -119,6 +119,7 @@
 #jungle3 {
   background-image: url(../../../../images/night5.png);
   background-position: bottom;
+  animation: floatL 4s ease-in-out infinite;
 }
 
 #jungle4 {
@@ -148,6 +149,18 @@
   }
   100% {
     transform: translateY(-20px);
+  }
+}
+
+@keyframes floatL {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
   }
 }
 

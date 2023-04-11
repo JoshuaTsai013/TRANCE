@@ -43,7 +43,7 @@ function Header() {
     <>
       {['sm',].map((expand) => (
         <Navbar className={styles.navbarCustom} key={expand} variant="dark" expand={expand} >
-          <Container fluid style={{justifyContent:'end'}}>
+          <Container fluid style={{ justifyContent: 'end' }}>
 
             <Navbar.Toggle className='ham' aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
@@ -68,9 +68,9 @@ function Header() {
                   <Nav.Link as={NavLink} to="/Sign">
                     {!session ?
                       <>SIGN UP/IN</>
-                      : 
+                      :
                       <div className={styles.userFrame} >
-                        <>AAA</>
+                        <>{session.user.email}</>
                         <Button onClick={logout} className={styles.logoutBtnCustom}><>SIGN OUT</></Button>
                       </div>
                     }

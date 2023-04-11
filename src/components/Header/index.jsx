@@ -17,25 +17,20 @@ import { createClient } from "@supabase/supabase-js";
 const supabase = createClient('https://fzzbffjgesbywijwlztg.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ6emJmZmpnZXNieXdpandsenRnIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODExMTg0ODQsImV4cCI6MTk5NjY5NDQ4NH0.CUYU0u1DTvOYm3jYZhKZ690cwOYFEAn66Y9fh7H-NqI');
 
 function Header() {
+  const [session, setSession] = useState(null);
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
-      setSession(session)
-    })
+      setSession(session);
+    });
 
     supabase.auth.onAuthStateChange((_event, session) => {
-      setSession(session)
-    })
-
-    let aa = !session ? "s" : session.user
-
-    console.log(aa)
-  }, [])
-
-  const [session, setSession] = useState(null)
+      setSession(session);
+    });
+  }, []);
 
   async function logout() {
-    const { error } = await supabase.auth.signOut()
+    const { error } = await supabase.auth.signOut();
   }
 
 
@@ -67,11 +62,11 @@ function Header() {
 
                   <Nav.Link as={NavLink} to="/Sign">
                     {!session ?
-                      <>SIGN UP/IN</>
+                      <span><>SIGN UP/IN</></span>
                       :
-                      <div className={styles.userFrame} >
-                        <>{session.user.email}</>
-                        <Button onClick={logout} className={styles.logoutBtnCustom}><>SIGN OUT</></Button>
+                      <div className={styles.userFrame}>
+                        <span> {session.user.email}</span>
+                        <Button onClick={logout} className={styles.logoutBtnCustom}> <span>SIGN OUT</span></Button>
                       </div>
                     }
                   </Nav.Link>

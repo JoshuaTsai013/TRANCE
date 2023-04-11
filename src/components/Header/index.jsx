@@ -32,11 +32,6 @@ function Header() {
     console.log(aa)
   }, [])
 
-  useEffect(() => {
-    const { user } = supabase.auth.session();
-    setUser(user);
-  }, []);
-
   const [session, setSession] = useState(null)
 
   async function logout() {

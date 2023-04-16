@@ -17,33 +17,28 @@ import { createClient } from "@supabase/supabase-js";
 const supabase = createClient('https://fzzbffjgesbywijwlztg.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ6emJmZmpnZXNieXdpandsenRnIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODExMTg0ODQsImV4cCI6MTk5NjY5NDQ4NH0.CUYU0u1DTvOYm3jYZhKZ690cwOYFEAn66Y9fh7H-NqI');
 
 function Header() {
+  const [session, setSession] = useState(null);
 
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
-      setSession(session)
-    })
+      setSession(session);
+    });
 
     supabase.auth.onAuthStateChange((_event, session) => {
-      setSession(session)
-    })
-
-    let aa = !session ? "s" : session.user
-
-    console.log(aa)
-  }, [])
-
-  const [session, setSession] = useState(null)
+      setSession(session);
+    });
+  }, []);
 
   async function logout() {
-    const { error } = await supabase.auth.signOut()
-}
+    const { error } = await supabase.auth.signOut();
+  }
 
 
   return (
     <>
       {['sm',].map((expand) => (
         <Navbar className={styles.navbarCustom} key={expand} variant="dark" expand={expand} >
-          <Container fluid>
+          <Container fluid style={{ justifyContent: 'end' }}>
 
             <Navbar.Toggle className='ham' aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
@@ -63,13 +58,19 @@ function Header() {
                   <Nav.Link as={NavLink} to="/">HOME</Nav.Link>
                   <Nav.Link as={NavLink} to="/AboutUs" >ABOUT US</Nav.Link>
                   <Nav.Link as={NavLink} to="/Music" >MUSIC</Nav.Link>
-                  {/* <Nav.Link as={NavLink} to="/Shop" >SHOP</Nav.Link> */}
                   <Nav.Link as={NavLink} to="/Model" >3D MODEL</Nav.Link>
 
-
-
+                  <Nav.Link as={NavLink} to="/Sign">
+                    {!session ?
+                      <span><>SIGN UP/IN</></span>
+                      :
+                      <div className={styles.userFrame}>
+                        <span> {session.user.email}</span>
+                        <Button onClick={logout} className={styles.logoutBtnCustom}> <span>SIGN OUT</span></Button>
+                      </div>
+                    }
+                  </Nav.Link>
                 </Nav>
-
                 {/* <Form className="d-flex justify-content-end " >
                   <Form.Control
                     type="search"
@@ -81,23 +82,6 @@ function Header() {
                   />
                   <Button className='rounded-pill' variant="outline-light"><SearchOutlined /></Button>
                 </Form> */}
-                <div className={styles.login}>
-
-                
-         <Nav className="me-3 gap-2 login">
-                    <Nav.Link as={NavLink} to="/Sign" className="btn btn-outline-light text-white" href="#">
-                      {!session ? <div>
-                        <h3>SIGN UP/IN</h3> 
-                         </div> :
-                          <div> <h3>{session.user.email}</h3>
-                          <Button onClick={logout}>  <h3>signOut</h3></Button>
-                          </div>
-                          }
-                    </Nav.Link>
-
-
-                  </Nav> 
-                </div>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>

@@ -18,6 +18,7 @@ function Parallaxx() {
             environment-image="purple1.jpg"
             exposure="1"
             auto-rotate
+            auto-rotate-delay="0"
             rotation-per-second="40deg"
             scale="1 1 1"
             style={{ height: '300px', width: '600px' }}
@@ -50,6 +51,7 @@ function Parallaxx() {
             environment-image="night.jpg"
             exposure="9"
             auto-rotate
+            auto-rotate-delay="0"
             rotation-per-second="40deg"
             scale="1.2 1.2 1.2"
             style={{ height: '300px' }}
@@ -82,6 +84,7 @@ function Parallaxx() {
             src="dh100.glb"
             exposure="0.8"
             auto-rotate
+            auto-rotate-delay="0"
             rotation-per-second="20deg"
             scale="2 2 2"
             style={{ height: '300px', width: '400px' }}
@@ -119,6 +122,7 @@ function Parallaxx() {
             environment-image="purple1.jpg"
             exposure="3"
             auto-rotate
+            auto-rotate-delay="0"
             rotation-per-second="20deg"
             scale="1.6 1.6 1.6"
             style={{ height: '300px', width: '300px' }}
@@ -149,7 +153,7 @@ function Parallaxx() {
         <div className="animation_layer aboutback"></div>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={5} speed={0.6} className="animation">
+      <ParallaxLayer offset={4.85} speed={0} className="animation">
         <div className="title" style={{ left: '10%' }}>
           <h1>CONTACT</h1>
           <h1>US</h1>
@@ -157,7 +161,7 @@ function Parallaxx() {
       </ParallaxLayer>
 
 
-      <ParallaxLayer offset={5.4} speed={0.4} className="animation">
+      <ParallaxLayer offset={5.3} speed={0.4} className="animation">
         <div className="aboutText" style={{ left: '12%' }}>
           Tel 02-0000000<br />
           Address : No.134, Sec. 2, Heping E. Rd., Da-an District, Taipei City
@@ -165,7 +169,7 @@ function Parallaxx() {
         </div>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={4.9} speed={0} className="animation">
+      <ParallaxLayer offset={4.85} speed={0} className="animation">
         <Form />
       </ParallaxLayer>
 

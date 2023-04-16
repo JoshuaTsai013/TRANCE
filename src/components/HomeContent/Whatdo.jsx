@@ -42,6 +42,7 @@ function Whatdo() {
         camera-target="auto auto auto"
         disable-zoom
         auto-rotate
+        auto-rotate-delay="100"
         rotation-per-second
         interaction-prompt="none"
         scale="1.3 1.3 1.3"

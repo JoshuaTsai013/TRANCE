@@ -13,12 +13,17 @@ import { NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 // import { SearchOutlined } from '@ant-design/icons';
 import { createClient } from "@supabase/supabase-js";
+import { signOut } from 'firebase/auth';
+
+
 
 const supabase = createClient('https://fzzbffjgesbywijwlztg.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ6emJmZmpnZXNieXdpandsenRnIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODExMTg0ODQsImV4cCI6MTk5NjY5NDQ4NH0.CUYU0u1DTvOYm3jYZhKZ690cwOYFEAn66Y9fh7H-NqI');
 
 function Header() {
   const [session, setSession] = useState(null);
 
+
+  //supabase
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
       setSession(session);
@@ -63,10 +68,11 @@ function Header() {
                   <Nav.Link as={NavLink} to="/Sign">
                     {!session ?
                       <span><>SIGN UP/IN</></span>
+                      
                       :
                       <div className={styles.userFrame}>
                         <span> {session.user.email}</span>
-                        <Button onClick={logout} className={styles.logoutBtnCustom}> <span>SIGN OUT</span></Button>
+                        <Button onClick={()=>signOut()} className={styles.logoutBtnCustom}> <span>SIGN OUT</span></Button>
                       </div>
                     }
                   </Nav.Link>

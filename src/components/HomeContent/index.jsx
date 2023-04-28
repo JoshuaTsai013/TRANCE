@@ -8,7 +8,7 @@ function HomeContent() {
     return (
         <div>
     
-     
+
             <Parallaxx />
         </div >
     );

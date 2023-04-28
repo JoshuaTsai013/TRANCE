@@ -10,6 +10,8 @@ const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYm
 const supabase = createClient(supabaseUrl, supabaseAnonKey)
 const auth = supabase.auth
 
+
+
 function SignContent() {
     const [user, setUser] = useState(null)
 
@@ -71,3 +73,4 @@ function SignContent() {
 }
 
 export default SignContent
+

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Header from "../components/Header";
 import ModelContent from "../components/ModelContent";
 
@@ -6,6 +7,7 @@ function Model() {
         <>
             <Header />
             <ModelContent />
+            <Helmet><title>3D Model</title></Helmet>
         </>
     );
 }

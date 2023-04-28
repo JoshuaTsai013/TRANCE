@@ -25,7 +25,7 @@ function Whatdo() {
             <h1 className="search-title"></h1>
 
             <Button variant="outline-light" id="button-addon2" onClick={() => onClickOpenVacancy(id)}>
-              <NavLink to="/AboutUs" ><h2>LEARN MORE ↗</h2></NavLink>
+              <NavLink to="/Music"><h2>LEARN MORE ↗</h2></NavLink>
             </Button>
           </InputGroup>
         </FadeIn>
@@ -37,10 +37,11 @@ function Whatdo() {
         camera-orbit="25deg 75deg 5.5m"
         environment-image="night.jpg"
         exposure="9"
-        camera-controls
+        // camera-controls
         camera-target="auto auto auto"
         disable-zoom
         auto-rotate
+        auto-rotate-delay="100"
         rotation-per-second
         interaction-prompt="none"
         scale="1.3 1.3 1.3"

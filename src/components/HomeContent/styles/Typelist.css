@@ -159,6 +159,18 @@
   display: inline-block;
   font-weight: 700;
 }
+.typelistBtn {
+  position: relative;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+}
 
 .card:nth-child(2):hover .circle::before {
   clip-path: circle(500px at center);

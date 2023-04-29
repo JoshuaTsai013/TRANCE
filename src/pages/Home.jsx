@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Header from "../components/Header";
 import HomeContent from "../components/HomeContent";
 import { useEffect } from "react";
+import Chatbot from "../components/Chatbot/Chatbot";
 
 
 
@@ -22,6 +23,8 @@ function Home() {
         <>
            
             <Header />
+            
+            <Chatbot />
             <HomeContent />
             <Helmet><title>TRANCE</title></Helmet>
         </>

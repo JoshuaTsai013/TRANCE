@@ -10,14 +10,37 @@ import Navbar from 'react-bootstrap/Navbar';
 
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import styles from './Headerstyle.module.css';
-// import '../pages/Home';
-// import Darklightmode from '../Darklightmode';
-import { NavLink } from 'react-router-dom';
-// import { SearchOutlined } from '@ant-design/icons';
 
-const supabase = createClient('https://fzzbffjgesbywijwlztg.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ6emJmZmpnZXNieXdpandsenRnIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODExMTg0ODQsImV4cCI6MTk5NjY5NDQ4NH0.CUYU0u1DTvOYm3jYZhKZ690cwOYFEAn66Y9fh7H-NqI');
+
+import { useNavigate, NavLink } from 'react-router-dom';
+
 
 function Header() {
+  const navigate = useNavigate();
+  const { setCurrentUser, currentUser } = useContext(AuthContext)
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((user) => {
+      setLoggedIn(user !== null);
+    });
+
+    return unsubscribe;
+  }, []);
+
+
+  const handleSignOut = () => {
+    if (currentUser) {
+      signOut(auth).then(() => {
+        setCurrentUser(null);
+        setLoggedIn(false);
+      }).catch((error) => {
+        console.log(error.message);
+      });
+    } else {
+      navigate("/login");
+    }
+  };
 
 
   return (
@@ -58,24 +81,6 @@ function Header() {
                   </Nav.Link>
                 </Nav>
 
-                {/* <Form className="d-flex justify-content-end " >
-                  <Form.Control
-                    type="search"
-                    placeholder=""
-                    id={styles.searchbar}
-                    className="me-2 rounded-pill"
-                    aria-label="Search"
-
-                  />
-                  <Button className='rounded-pill' variant="outline-light"><SearchOutlined /></Button>
-                </Form> */}
-
-                {/* <Nav className="me-3 gap-2 login">
-                  <Nav.Link className="btn btn-outline-light text-white" href="#">LOGIN</Nav.Link>
-                  <Nav.Link eventKey={2} className="btn btn-outline-light text-white " href="#">
-                    SIGN UP
-                  </Nav.Link>
-                </Nav> */}
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>

@@ -24,9 +24,8 @@ function Whatdo() {
           <InputGroup className="mb-3 searchbar">
             <h1 className="search-title"></h1>
 
-            <Button variant="outline-light" id="button-addon2" onClick={() => onClickOpenVacancy(id)}>
-              <NavLink to="/Music"><h2>LEARN MORE ↗</h2></NavLink>
-            </Button>
+            <Button variant="outline-light" id="button-addon2" >
+              <NavLink to="/AboutUs" style={{ textDecoration: 'none' }}><h2 style={{ margin: 'auto' }}>LEARN MORE ↗</h2></NavLink></Button>
           </InputGroup>
         </FadeIn>
       </div>
@@ -37,7 +36,8 @@ function Whatdo() {
         camera-orbit="25deg 75deg 5.5m"
         environment-image="night.jpg"
         exposure="9"
-        // camera-controls
+        camera-controls
+        touch-action="none"
         camera-target="auto auto auto"
         disable-zoom
         auto-rotate

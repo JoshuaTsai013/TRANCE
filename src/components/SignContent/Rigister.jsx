@@ -66,6 +66,7 @@ const Register = () => {
         <div className="formContainer">
             <div className="formWrapper">
                 <Header />
+                <img className="sign-logo" src="./public/images/logo.png" style={{ width: "60px", display: "flex" }}></img>
                 <span className="register-title">Register</span>
                 <form onSubmit={handleSubmit}>
                     <input required type="text" placeholder="username" />
@@ -74,14 +75,14 @@ const Register = () => {
                     <input required style={{ display: "none" }} type="file" id="file" />
                     <label htmlFor="file">
                         <img src={Add} alt="" />
-                        <span>Add an avatar</span>
+                        <span>Add your icon</span>
                     </label>
                     <button className="register-btn" disabled={loading}>Sign up</button>
                     {loading && "Uploading and compressing the image please wait..."}
                     {err && <span>Something went wrong</span>}
                 </form>
                 <p>
-                    You do have an account? <Link to="/login">Login</Link>
+                    You do have an account? <Link to="/login" style={{ textDecoration: 'none' }}>Login</Link>
                 </p>
             </div>
         </div>

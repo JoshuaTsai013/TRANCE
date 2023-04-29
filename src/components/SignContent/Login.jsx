@@ -24,6 +24,7 @@ const Login = () => {
     <div className="formContainer">
       <div className="formWrapper">
         <Header />
+        <img  className="sign-logo" src="./public/images/logo.png" style={{width:"60px",display:"flex"}}></img>
         <span className="register-title">Login</span>
         <form onSubmit={handleSubmit}>
           <input type="email" placeholder="email" />
@@ -31,7 +32,7 @@ const Login = () => {
           <button className="register-btn">Sign in</button>
           {err && <span>Something went wrong</span>}
         </form>
-        <p>You don't have an account? <Link to="/register">Register</Link></p>
+        <p>You don't have an account? <Link to="/register" style={{ textDecoration: 'none' }}>Register</Link></p>
       </div>
     </div>
   );

@@ -4,6 +4,22 @@
       url('/fonts/1.OTF') format("woff");
   }
 
+.logoutbtn{
+    
+    background-color: rgb(129, 97, 248);
+    border: none;
+    font-size: 14px;
+    margin: 10px;
+}
+
+ .photo{
+    margin: 10px;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+ }
+
 .navlink {
     
     display: flex;
@@ -12,7 +28,7 @@
     padding-right: 30px;
     text-align: left;
     font-weight: 800;
-    font-size: 14px;
+    font-size: 17px;
     font-family: "123";
     letter-spacing: 0.3rem;
     opacity: 1;

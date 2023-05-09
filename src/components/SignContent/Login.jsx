@@ -20,15 +20,22 @@ const Login = () => {
       setErr(true);
     }
   };
+
   return (
     <div className="formContainer">
       <div className="formWrapper">
         <Header />
-        <img  className="sign-logo" src="./public/images/logo.png" style={{width:"60px",display:"flex"}}></img>
+        <img className="sign-logo" src="./public/images/logo.png" style={{width:"60px",display:"flex"}}></img>
         <span className="register-title">Login</span>
         <form onSubmit={handleSubmit}>
           <input type="email" placeholder="email" />
           <input type="password" placeholder="password" />
+
+          <div className="remember-me">
+            <input type="checkbox" id="remember" name="remember" />
+            <label htmlFor="remember">Remember me</label>
+          </div>
+
           <button className="register-btn">Sign in</button>
           {err && <span>Something went wrong</span>}
         </form>
@@ -39,3 +46,4 @@ const Login = () => {
 };
 
 export default Login;
+

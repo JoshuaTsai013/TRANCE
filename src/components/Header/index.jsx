@@ -49,7 +49,7 @@ function Header() {
         <Navbar className={styles.navbarCustom} key={expand} variant="dark" expand={expand} >
           <Container fluid style={{ justifyContent: 'end' }}>
 
-            <Navbar.Toggle className='ham' aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}

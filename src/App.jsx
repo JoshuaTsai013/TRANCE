@@ -13,6 +13,7 @@ import { AuthContext } from './components/SignContent/context/AuthContext';
 
 function App() {
 
+  
   const {currentUser} = useContext(AuthContext)
   console.log(currentUser)
   

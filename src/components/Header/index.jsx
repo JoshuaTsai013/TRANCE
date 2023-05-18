@@ -4,10 +4,10 @@ import { auth } from '../../firebase'
 import { AuthContext } from '../../components/SignContent/context/AuthContext'
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-
+import { FaRegHeart } from 'react-icons/fa';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
+import { FaSignOutAlt } from 'react-icons/fa';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import styles from './Headerstyle.module.css';
 
@@ -72,12 +72,17 @@ function Header() {
                   <Nav.Link as={NavLink} to="/Sign">
                     {loggedIn ?
                       <div className={styles.userFrame}>
+                       
                         <img className={styles.photo} src={currentUser.photoURL} alt="" />
-                        <span>{currentUser.displayName}</span>
-                        <Button className={styles.logoutbtn} onClick={handleSignOut}>LOGOUT</Button>
+                        <span className={styles.username}> 
+                        
+                         { currentUser.displayName}</span>
+                        <FaRegHeart className={styles.favoriteIcon} />
+                        <Button className={styles.logoutbtn} onClick={handleSignOut}><FaSignOutAlt /></Button>
+                       
                       </div>
                       :
-                      <span >SIGN UP/IN</span>
+                      <span>SIGN UP/IN</span>
                     }
                   </Nav.Link>
                 </Nav>

@@ -6,7 +6,7 @@ import Form from './Form'
 
 function Parallaxx() {
   return (
-    <Parallax pages={6.3} className="hideScrollBar">
+    <Parallax pages={6.4} className="hideScrollBar">
       <ParallaxLayer offset={0} factor={1} style={{ top: '-5px' }}>
         <div className="animation_layer aboutback"></div>
       </ParallaxLayer>
@@ -161,7 +161,7 @@ function Parallaxx() {
       </ParallaxLayer>
 
 
-      <ParallaxLayer offset={5.3} speed={0.4} className="animation">
+      <ParallaxLayer offset={5.3} speed={0.4} factor={0.5} className="animation">
         <div className="aboutText" style={{ left: '12%' }}>
           Tel 02-0000000<br />
           Address : No.134, Sec. 2, Heping E. Rd., Da-an District, Taipei City
@@ -173,7 +173,7 @@ function Parallaxx() {
         <Form />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={5.8} factor={0.45} style={{ bottom: '0' }}>
+      <ParallaxLayer offset={5.8} factor={0.55} style={{ bottom: '0' }}>
         <Footer />
       </ParallaxLayer>
     </Parallax >

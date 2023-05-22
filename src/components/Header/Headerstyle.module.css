@@ -9,14 +9,19 @@
     background-color: rgb(129, 97, 248);
     border: none;
     font-size: 14px;
-    margin: 10px;
+   
+}
+
+.favoriteIcon{
+    width: 50px;
+    height: 25px;
 }
 
  .photo{
-    margin: 10px;
+    margin-right: 10px;
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 33px;
+    height: 33px;
     border-radius: 100%;
  }
 
@@ -32,6 +37,11 @@
     font-family: "123";
     letter-spacing: 0.3rem;
     opacity: 1;
+}
+
+.username{
+  position: relative;
+    font-size: 18px;
 }
 
 /* .navlink :hover {

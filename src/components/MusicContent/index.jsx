@@ -9,7 +9,7 @@ function MusicContent() {
             <div id="musicsideBar"></div>
             <div id="musicContentArea">
                 <div className="musicBannerFrame"><div className="musicBanner"></div></div>
-                <Row style={{ width: "100%",margin:"0" }}>
+                <Row style={{ width: "100%", paddingLeft: "12px", paddingRight: "12px" ,margin: "0"}}>
                     <Col sm={12} md={6} lg={4} xl={3} className="musicItemFrame"><div className="musicItem"></div></Col>
                     <Col sm={12} md={6} lg={4} xl={3} className="musicItemFrame"><div className="musicItem"></div></Col>
                     <Col sm={12} md={6} lg={4} xl={3} className="musicItemFrame"><div className="musicItem"></div></Col>
@@ -20,7 +20,8 @@ function MusicContent() {
                     <Col sm={12} md={6} lg={4} xl={3} className="musicItemFrame"><div className="musicItem"></div></Col>
                 </Row>
 
-                <Footer />
+                <div style={{ height: "380px" }}><Footer /></div>
+
             </div>
         </div>
     );

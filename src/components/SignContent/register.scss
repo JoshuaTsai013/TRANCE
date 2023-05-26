@@ -7,6 +7,17 @@
 
   background: linear-gradient(180deg, #171753, #211466, #2b1357, #181850);
 
+  .password-toggle {
+    position: absolute;
+    top: 65%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+ 
+  
+  
 
   
   .formWrapper {
@@ -191,6 +202,7 @@
     .formWrapper {
       width: 50%;
     }
+    
   }
 }
 

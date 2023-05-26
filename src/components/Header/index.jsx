@@ -72,14 +72,15 @@ function Header() {
                   <Nav.Link as={NavLink} to="/Sign">
                     {loggedIn ?
                       <div className={styles.userFrame}>
-                       
-                        <img className={styles.photo} src={currentUser.photoURL} alt="" />
-                        <span className={styles.username}> 
+                        <Nav.Link as={NavLink} to="/User">
+                          <img className={styles.photo} src={currentUser.photoURL} alt="" />
+                          <span className={styles.username}>
+
+                            {currentUser.displayName}</span>
                         
-                         { currentUser.displayName}</span>
                         <FaRegHeart className={styles.favoriteIcon} />
                         <Button className={styles.logoutbtn} onClick={handleSignOut}><FaSignOutAlt /></Button>
-                       
+                        </Nav.Link>
                       </div>
                       :
                       <span>SIGN UP/IN</span>

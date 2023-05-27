@@ -9,6 +9,7 @@ import {
     query,
 } from "firebase/firestore";
 import { auth } from "../../firebase";
+import FadeIn from "../Animation/FadeIn";
 
 function Message() {
     const [messages, setMessages] = useState([]);
@@ -28,42 +29,46 @@ function Message() {
 
     const handleMessageSubmit = async (e) => {
         e.preventDefault();
-      
+
         if (newMessage.trim() === "") {
-          return;
+            return;
         }
-      
+
         const db = getFirestore();
         const { currentUser } = auth;
-      
+
         try {
-          const newDocRef = await addDoc(collection(db, "messages"), {
-            message: newMessage,
-            timestamp: new Date(),
-            userId: currentUser ? currentUser.uid : "",
-          });
-      
-          const newMessageData = {
-            id: newDocRef.id,
-            message: newMessage,
-            timestamp: new Date(),
-            userId: currentUser ? currentUser.uid : "",
-          };
-      
-          setMessages((prevMessages) => [...prevMessages, newMessageData]); 
-          setNewMessage("");
+            const newDocRef = await addDoc(collection(db, "messages"), {
+                message: newMessage,
+                timestamp: new Date(),
+                userId: currentUser ? currentUser.uid : "",
+            });
+
+            const newMessageData = {
+                id: newDocRef.id,
+                message: newMessage,
+                timestamp: new Date(),
+                userId: currentUser ? currentUser.uid : "",
+            };
+
+            setMessages((prevMessages) => [...prevMessages, newMessageData]);
+            setNewMessage("");
         } catch (error) {
-          console.error("Error adding message: ", error);
+            console.error("Error adding message: ", error);
         }
-      };
+    };
 
     return (
+      
         <div id="message">
+              <FadeIn>
             <div className="message-title">
                 <h1>MESSAGE BOARD</h1>
                 <p>Welcome to leave suggestions and blessings!</p>
             </div>
+
             <div className="message-container">
+          
                 <div className="message-board">
                     <div className="message-list">
                         {messages.map((message) => (
@@ -72,7 +77,7 @@ function Message() {
                                 className="message-item"
                             >
                                 <p>{message.message}</p>
-                                <span>{new Date(message.timestamp).toLocaleString()}</span> 
+                                <span>{new Date(message.timestamp).toLocaleString()}</span>
                             </div>
                         ))}
                     </div>
@@ -91,14 +96,18 @@ function Message() {
                         {userMessages.map((message) => (
                             <div key={message.id} className="user-message-item">
                                 <p>{message.message}</p>
-                                <span>{new Date(message.timestamp).toLocaleString()}</span> 
+                                <span>{new Date(message.timestamp).toLocaleString()}</span>
                             </div>
                         ))}
 
                     </div>
+                    
                 </div>
+            
             </div>
+            </FadeIn>
         </div>
+        
     );
 }
 

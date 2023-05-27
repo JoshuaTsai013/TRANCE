@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { signOut } from "firebase/auth"
-import { auth } from '../../firebase'
-import { AuthContext } from '../../components/SignContent/context/AuthContext'
+import { signOut } from "firebase/auth";
+import { auth } from '../../firebase';
+import { AuthContext } from '../../components/SignContent/context/AuthContext';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import { FaRegHeart } from 'react-icons/fa';
@@ -11,13 +11,11 @@ import { FaSignOutAlt } from 'react-icons/fa';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import styles from './Headerstyle.module.css';
 
-
 import { useNavigate, NavLink } from 'react-router-dom';
-
 
 function Header() {
   const navigate = useNavigate();
-  const { setCurrentUser, currentUser } = useContext(AuthContext)
+  const { setCurrentUser, currentUser } = useContext(AuthContext);
   const [loggedIn, setLoggedIn] = useState(false);
 
   useEffect(() => {
@@ -28,27 +26,26 @@ function Header() {
     return unsubscribe;
   }, []);
 
-
   const handleSignOut = () => {
     if (currentUser) {
-      signOut(auth).then(() => {
-        setCurrentUser(null);
-        setLoggedIn(false);
-      }).catch((error) => {
-        console.log(error.message);
-      });
+      signOut(auth)
+        .then(() => {
+          setCurrentUser(null);
+          setLoggedIn(false);
+        })
+        .catch((error) => {
+          console.log(error.message);
+        });
     } else {
       navigate("/login");
     }
   };
 
-
   return (
     <>
-      {['sm',].map((expand) => (
-        <Navbar className={styles.navbarCustom} key={expand} variant="dark" expand={expand} >
+      {['sm'].map((expand) => (
+        <Navbar className={styles.navbarCustom} key={expand} variant="dark" expand={expand}>
           <Container fluid style={{ justifyContent: 'end' }}>
-
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -61,39 +58,34 @@ function Header() {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
-                {/* 日夜按鈕 */}
-                {/* <Darklightmode /> */}
                 <Nav className={styles.navlink}>
                   <Nav.Link as={NavLink} to="/">HOME</Nav.Link>
-                  <Nav.Link as={NavLink} to="/AboutUs" >ABOUT US</Nav.Link>
-                  <Nav.Link as={NavLink} to="/Music" >MUSIC</Nav.Link>
-                  <Nav.Link as={NavLink} to="/Model" >3D MODEL</Nav.Link>
+                  <Nav.Link as={NavLink} to="/AboutUs">ABOUT US</Nav.Link>
+                  <Nav.Link as={NavLink} to="/Music">MUSIC</Nav.Link>
+                  <Nav.Link as={NavLink} to="/Model">3D MODEL</Nav.Link>
 
                   <Nav.Link as={NavLink} to="/Sign">
-                    {loggedIn ?
+                    {loggedIn ? (
                       <div className={styles.userFrame}>
-                        <Nav.Link as={NavLink} to="/User">
+                        <NavLink to="/User" className={styles.navvLink}>
                           <img className={styles.photo} src={currentUser.photoURL} alt="" />
-                          <span className={styles.username}>
-
-                            {currentUser.displayName}</span>
-                        
+                          <span className={styles.username}>{currentUser.displayName}</span>
+                        </NavLink>
                         <FaRegHeart className={styles.favoriteIcon} />
-                        <Button className={styles.logoutbtn} onClick={handleSignOut}><FaSignOutAlt /></Button>
-                        </Nav.Link>
+                        <Button className={styles.logoutbtn} onClick={handleSignOut}>
+                          <FaSignOutAlt />
+                        </Button>
                       </div>
-                      :
+                    ) : (
                       <span>SIGN UP/IN</span>
-                    }
+                    )}
                   </Nav.Link>
                 </Nav>
-
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
-        </Navbar >
-      ))
-      }
+        </Navbar>
+      ))}
     </>
   );
 }

@@ -4,6 +4,11 @@
       url('/fonts/1.OTF') format("woff");
   }
 
+  .navvLink{
+    
+    text-decoration: none;
+  }
+
 .logoutbtn{
     
     background-color: rgb(129, 97, 248);

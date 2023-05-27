@@ -8,6 +8,7 @@ import { useNavigate, Link } from "react-router-dom";
 import Header from "../Header/index";
 import "./register.scss";
 
+
 const Register = () => {
     const [err, setErr] = useState(false);
     const [loading, setLoading] = useState(false);

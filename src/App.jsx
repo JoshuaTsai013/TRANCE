@@ -10,6 +10,7 @@ import Login from './components/SignContent/Login';
 import Register from './components/SignContent/Rigister';
 import { useContext } from 'react';
 import { AuthContext } from './components/SignContent/context/AuthContext';
+import User from './pages/User';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/Music" element={<Music />} />
           <Route path="/Sign" element={<Sign />} />
           <Route path="/Model" element={<Model />} />
+          <Route path="/User" element={<User />} />
         </Routes>
       </BrowserRouter>
     </HelmetProvider>

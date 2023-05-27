@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Add from "../../../public/images/addAvatar.png";
+import Add from "../../assets/images/addAvatar.png";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth, db, storage } from "../../firebase";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";

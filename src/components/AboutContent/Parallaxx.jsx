@@ -6,7 +6,7 @@ import Form from './Form'
 
 function Parallaxx() {
   return (
-    <Parallax pages={6.4} className="hideScrollBar">
+    <Parallax pages={6.25} className="hideScrollBar">
       <ParallaxLayer offset={0} factor={1} style={{ top: '-5px' }}>
         <div className="animation_layer aboutback"></div>
       </ParallaxLayer>
@@ -173,7 +173,7 @@ function Parallaxx() {
         <Form />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={5.8} factor={0.55} style={{ bottom: '0' }}>
+      <ParallaxLayer offset={5.8} factor={0.42} style={{ bottom: '0' }}>
         <Footer />
       </ParallaxLayer>
     </Parallax >

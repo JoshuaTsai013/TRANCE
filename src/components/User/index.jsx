@@ -1,34 +1,27 @@
-import React, { useState } from "react";
-import { FaUser, FaStar, FaMusic, FaQuestion } from "react-icons/fa";
+import React, { useState, useContext } from "react";
+import { AuthContext } from "../SignContent/context/AuthContext";
+import { FaUser, FaStar, FaMusic, FaQuestion } from "react-icons/fa"; // 導入需要的 react-icons 元件
 import "./styles/User.css";
 
 function UserContent() {
-  const [name, setName] = useState("WEN");
-  const user = {
-    age: 20,
-    email: "ss23094527@gmail.com",
-    // 其他用戶資料...
-  };
-
-  const handleNameChange = (event) => {
-    setName(event.target.value);
-  };
+  const { currentUser } = useContext(AuthContext);
+  const [name, setName] = useState(currentUser ? currentUser.displayName : "");
 
   return (
     <div className="User">
       <div className="user-profile">
         <h1 className="user-title">User Profile</h1>
         <div className="user-icon">
-          <img src="https://img.onl/7N2dFr" alt="User Avatar" className="user-icon" />
+          {currentUser && (
+            <img src={currentUser.photoURL} alt="User Avatar" className="user-icon" />
+          )}
         </div>
         <div className="user-info">
           <h1>
-            <strong> {name}</strong>
+            <strong>{currentUser.displayName}</strong>
           </h1>
-         
         </div>
       </div>
-     
       <div className="user-footer">
         <div className="footer-section">
           <FaUser className="nav-icon" />
@@ -47,7 +40,6 @@ function UserContent() {
           <span>MY QUESTION</span>
         </div>
       </div>
-     
     </div>
   );
 }

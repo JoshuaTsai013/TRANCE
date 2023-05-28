@@ -31,30 +31,32 @@ const Register = () => {
             const storageRef = ref(storage, `${displayName + date}`);
 
             await uploadBytesResumable(storageRef, file).then(() => {
-                getDownloadURL(storageRef).then(async (downloadURL) => {
-                    try {
-                        //Update profile
-                        await updateProfile(res.user, {
-                            displayName,
-                            photoURL: downloadURL,
-                        });
-                        //create user on firestore
-                        await setDoc(doc(db, "users", res.user.uid), {
-                            uid: res.user.uid,
-                            displayName,
-                            email,
-                            photoURL: downloadURL,
-                        });
-
-                        //create empty user chats on firestore
-                        await setDoc(doc(db, "userChats", res.user.uid), {});
-                        navigate("/");
-                    } catch (err) {
-                        console.log(err);
-                        setErr(true);
-                        setLoading(false);
-                    }
-                });
+               
+getDownloadURL(storageRef).then(async (downloadURL) => {
+    try {
+      // Update profile
+      await updateProfile(res.user, {
+        displayName,
+        photoURL: downloadURL,
+      });
+      // Create user on Firestore
+      await setDoc(doc(db, "users", res.user.uid), {
+        uid: res.user.uid,
+        displayName,
+        email,
+        photoURL: downloadURL,
+      });
+  
+      // Create empty user chats on Firestore
+      await setDoc(doc(db, "userChats", res.user.uid), {});
+  
+      navigate("/");
+    } catch (err) {
+      console.log(err);
+      setErr(true);
+      setLoading(false);
+    }
+  });
             });
         } catch (err) {
             setErr(true);

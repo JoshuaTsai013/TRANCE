@@ -10,7 +10,7 @@ import Message from './Message';
 function Parallaxx() {
   return (
     <div className="container">
-      <Parallax pages={8.1} style={{ top: '0', left: '0' }} className="animation parallax hideScrollBar">
+      <Parallax pages={8.4} style={{ top: '0', left: '0' }} className="animation parallax hideScrollBar">
         <ParallaxLayer offset={0} speed={0} style={{ top: '-5px' }}>
           <div className="animation_layer parallax" id="artback"></div>
         </ParallaxLayer>
@@ -53,7 +53,7 @@ function Parallaxx() {
         <ParallaxLayer offset={6.4} factor={1.4} style={{ top: '-1px' }}>
           <Message />
         </ParallaxLayer>
-        <ParallaxLayer offset={7.65} factor={0.41} style={{ bottom: '0' }}>
+        <ParallaxLayer offset={7.8} factor={0.55} style={{ top: '0px', background: 'linear-gradient(180deg, #181850, #12124d, #3d108f, #181850)' }}>
           <Footer />
         </ParallaxLayer>
       </Parallax>

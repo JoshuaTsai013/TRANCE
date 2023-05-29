@@ -19,6 +19,31 @@
 }
 
 
+.upload-label {
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.upload-label .icon {
+  font-size: 18px;
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
 .user-title {
   text-shadow: 0 2px 4px rgba(255, 255, 255, 0.918);
   font-family: "123";
@@ -32,7 +57,7 @@
 .user-icon {
   box-shadow: 0 2px 4px rgba(255, 255, 255, 0.918);
   border-radius: 100%;
-  background-image: url(https://img.onl/7N2dFr);
+ 
   background-size: cover;
   width: 200px;
   height: 200px;

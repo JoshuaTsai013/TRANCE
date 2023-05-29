@@ -1,0 +1,26 @@
+.musicItem {
+    width: auto;
+    margin: 0px;
+    aspect-ratio: 1 / 1;
+    background: #e1e1e1;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+
+    display: flex;
+}
+
+
+.playBtns {
+    position: relative;
+    top: 90%;
+    left: 90%;
+
+    transform: translate(-100%, -100%);
+
+    padding: auto !important;
+    width: "60px" !important;
+    height: "70px" !important;
+
+    z-index: 999;
+}

@@ -12,27 +12,36 @@ import { useContext } from 'react';
 import { AuthContext } from './components/SignContent/context/AuthContext';
 import User from './pages/User';
 
+import {
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query'
+
+const queryClient = new QueryClient()
+
 function App() {
 
-  
-  const {currentUser} = useContext(AuthContext)
+
+  const { currentUser } = useContext(AuthContext)
   console.log(currentUser)
-  
+
   return (
-    <HelmetProvider context={{}}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="login" element={<Login />} />
-          <Route path="register" element={<Register />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/AboutUs" element={<About />} />
-          <Route path="/Music" element={<Music />} />
-          <Route path="/Sign" element={<Sign />} />
-          <Route path="/Model" element={<Model />} />
-          <Route path="/User" element={<User />} />
-        </Routes>
-      </BrowserRouter>
-    </HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+      <HelmetProvider context={{}}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="login" element={<Login />} />
+            <Route path="register" element={<Register />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/AboutUs" element={<About />} />
+            <Route path="/Music" element={<Music />} />
+            <Route path="/Sign" element={<Sign />} />
+            <Route path="/Model" element={<Model />} />
+            <Route path="/User" element={<User />} />
+          </Routes>
+        </BrowserRouter>
+      </HelmetProvider>
+    </QueryClientProvider>
   )
 }
 

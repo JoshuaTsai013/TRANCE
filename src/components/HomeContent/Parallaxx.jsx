@@ -53,7 +53,7 @@ function Parallaxx() {
         <ParallaxLayer offset={6.4} factor={1.4} style={{ top: '-1px' }}>
           <Message />
         </ParallaxLayer>
-        <ParallaxLayer offset={7.65} factor={0.41} style={{ bottom: '0' }}>
+        <ParallaxLayer offset={7.65} factor={0.42} style={{ top: '0px', background: 'linear-gradient(180deg, #181850, #12124d, #3d108f, #181850)' }}>
           <Footer />
         </ParallaxLayer>
       </Parallax>

@@ -8,7 +8,7 @@ import { useSongs } from '../react-query';
 function Music() {
 
     const { data, isLoading } = useSongs();
-    console.log(isLoading);
+    // console.log(isLoading);
     const songs = data || [];
   
 

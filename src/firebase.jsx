@@ -4,14 +4,10 @@ import { getStorage } from "firebase/storage";
 import { getFirestore,
   collection,
   doc,
-  setDoc,
   getDoc,
   updateDoc,
-  getDocs,
-  deleteDoc,
-  query,
-  where,
-  initializeFirestore } from "firebase/firestore";
+  getDocs
+ } from "firebase/firestore";
 import _ from "lodash";
 
 const firebaseConfig = {
@@ -43,23 +39,23 @@ export const getSongs = async () => {
   return result;
 };
 
-// export const getUserInfo = async () => {
-//   const storedUser = localStorage.getItem("user");
-//   const user = auth?.currentUser || JSON.parse(storedUser) || null;
+export const getUserInfo = async () => {
+  const storedUser = localStorage.getItem("user");
+  const user = auth?.currentUser || JSON.parse(storedUser) || null;
 
-//   if (user) {
-//     const docRef = doc(db, "users", user.uid);
-//     const docSnap = await getDoc(docRef);
-//     const userDoc = docSnap.data();
-//     return {
-//       uid: user.uid,
-//       email: user.email,
-//       ...userDoc,
-//     };
-//   } else {
-//     return {}
-//   }
-// }
+  if (user) {
+    const docRef = doc(db, "users", user.uid);
+    const docSnap = await getDoc(docRef);
+    const userDoc = docSnap.data();
+    return {
+      uid: user.uid,
+      email: user.email,
+      ...userDoc,
+    };
+  } else {
+    return {}
+  }
+}
 
 export const toggleFavoriteSong = async ({ SongId, uid }) => {
   const docRef = doc(db, "users", uid);

@@ -49,8 +49,9 @@ function MusicContent({ songs, isLoading }) {
                         {songs.map(song => (
                             <Col
                                 key={song.id}
-                                sm={{ span: 12 }}
-                                lg={{ span: 6 }}
+                                xs={{ span: 6 }}
+                                sm={{ span: 4 }}
+                                lg={{ span: 4 }}
                                 xl={{ span: 4 }}
                                 xxl={{ span: 2 }}
                             >

@@ -13,7 +13,7 @@ export default function Favorite({count}) {
 
   return (
     <div onClick={toggleOpen} className={styles.favorite}>
-      <Badge count={count} color="#F19D38" style={{ color: "white" }}>
+      <Badge count={2} color="#F19D38" style={{ color: "white" }}>
         <HeartFilled  style={{ color: '#efeef7' }}/>
       </Badge>
     </div>

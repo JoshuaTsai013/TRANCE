@@ -1,13 +1,11 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import {
     toggleFavoriteSong,
-    getUserInfo,
     getSongs
 } from "../firebase";
 
 export const useSongs = () => {
-    const{data} = useQuery( [],getSongs)
-    return {data};
+    return useQuery([], getSongs);
 };
 
 export const useToggleFavoriteSong = () => {
@@ -19,10 +17,10 @@ export const useToggleFavoriteSong = () => {
     });
 };
 
-export const useUserInfo = () => {
-    return useQuery({
-        queryKey: ["uid"],
-        queryFn: getUserInfo,
-        initialData: {},
-    });
-};
+// export const useUserInfo = () => {
+//     return useQuery({
+//         queryKey: ["uid"],
+//         queryFn: getUserInfo,
+//         initialData: {},
+//     });
+// };

@@ -1,12 +1,14 @@
-import { Badge, theme } from "antd";
-import { HeartFilled } from "../Icons";
-import { useUserInfo } from "../../react-query";
-import styles from "./favorite.module.css";
+import { Badge } from "antd";
+import { HeartFilled } from "@ant-design/icons";
 
-export default function Favorite() {
-  const { data: userInfo} = useUserInfo() || {};
-  const favorites = userInfo.favorites || [];
-  const count = favorites.length;
+import styles from "./favorite.module.css";
+import React, { useContext, useState, useEffect } from 'react';
+import { AuthContext } from '../../components/SignContent/context/AuthContext';
+import { auth } from '../../firebase';
+export default function Favorite({count}) {
+
+  const { setCurrentUser, currentUser } = useContext(AuthContext);
+  
   const toggleOpen = () => {};
 
   return (

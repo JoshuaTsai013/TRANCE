@@ -1,7 +1,17 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage";
-import { getFirestore,collection,getDocs } from "firebase/firestore";
+import { getFirestore,
+  collection,
+  doc,
+  setDoc,
+  getDoc,
+  updateDoc,
+  getDocs,
+  deleteDoc,
+  query,
+  where,
+  initializeFirestore } from "firebase/firestore";
 import _ from "lodash";
 
 const firebaseConfig = {
@@ -33,33 +43,33 @@ export const getSongs = async () => {
   return result;
 };
 
-export const getUserInfo = async () => {
-  const storedUser = localStorage.getItem("user");
-  const user = auth?.currentUser || JSON.parse(storedUser) || null;
+// export const getUserInfo = async () => {
+//   const storedUser = localStorage.getItem("user");
+//   const user = auth?.currentUser || JSON.parse(storedUser) || null;
 
-  if(user) {
-    const docRef = doc(db, "users", user.uid);
-    const docSnap = await getDoc(docRef);
-    const userDoc = docSnap.data();
-    return {
-      uid: user.uid,
-      email: user.email,
-      ...userDoc,
-    };    
-  } else {
-    return {}
-  }
-}
+//   if (user) {
+//     const docRef = doc(db, "users", user.uid);
+//     const docSnap = await getDoc(docRef);
+//     const userDoc = docSnap.data();
+//     return {
+//       uid: user.uid,
+//       email: user.email,
+//       ...userDoc,
+//     };
+//   } else {
+//     return {}
+//   }
+// }
 
-export const toggleFavoriteSong = async ({SongId, uid}) => {
+export const toggleFavoriteSong = async ({ SongId, uid }) => {
   const docRef = doc(db, "users", uid);
   const docSnap = await getDoc(docRef);
   const userDoc = docSnap.data();
   const favorites = userDoc?.favorites || [];
-  if(favorites.length === _.pull(favorites,SongId).length){
-    favorites.push(SongId);  
+  if (favorites.length === _.pull(favorites, SongId).length) {
+    favorites.push(SongId);
   }
-  await updateDoc(docRef, { favorites }); 
+  await updateDoc(docRef, { favorites });
   return favorites;
 }
 

@@ -5,10 +5,10 @@ import ScrollToTop from '../components/ScrollToTop';
 
 import { useSongs } from '../react-query';
 
-
 function Music() {
 
-    const { data } = useSongs();
+    const { data, isLoading } = useSongs();
+    console.log(isLoading);
     const songs = data || [];
   
 
@@ -17,7 +17,7 @@ function Music() {
             <ScrollToTop />
             <div>
                 <Header />
-                <MusicContent songs={songs}/>
+                <MusicContent songs={songs} isLoading={isLoading}/>
             </div>
             <Helmet><title>Music</title></Helmet>
         </>

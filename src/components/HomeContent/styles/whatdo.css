@@ -79,8 +79,9 @@
 /*searchbar*/
 
 #button-addon2 {
-    z-index: 100;
-    margin-top: 3%;
+
+    z-index: 1;
+    margin-top: 10%;
     width: auto;
     border-radius: 5px;
     text-decoration: none;
@@ -88,13 +89,16 @@
     height: 50px;
 }
 
-#button-addon2 h2 {
+#button-addon2 h2{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     letter-spacing: 2px;
     color: aliceblue;
     font-size: 17px;
-    text-decoration: none;
+    text-decoration: none !important; 
 }
+
+
+
 
 /*平板*/
 @media (max-width:768px) {

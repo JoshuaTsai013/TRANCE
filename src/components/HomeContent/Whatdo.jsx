@@ -25,8 +25,7 @@ function Whatdo() {
             <h1 className="search-title"></h1>
 
             <Button variant="outline-light" id="button-addon2" >
-              <NavLink to="/AboutUs" style={{ textDecoration: 'none' }}><h2 style={{margin:'auto'}}>LEARN MORE ↗</h2></NavLink>
-            </Button>
+              <NavLink to="/AboutUs" style={{ textDecoration: 'none' }}><h2 style={{ margin: 'auto' }}>LEARN MORE ↗</h2></NavLink></Button>
           </InputGroup>
         </FadeIn>
       </div>

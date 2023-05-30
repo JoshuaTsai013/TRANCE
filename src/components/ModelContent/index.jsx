@@ -1,6 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import './styles/model.css'
+
 import ModelDescription from './ModelDescription.jsx'
+
+
 function ModelContent() {
     const [showBtn, setshowBtn] = useState(false)
     const [promptVisible, setpromptVisible] = useState(true)

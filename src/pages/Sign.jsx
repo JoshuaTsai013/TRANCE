@@ -1,14 +1,15 @@
-import Footer from "../components/Footer";
+
 import Header from "../components/Header";
-import SignContent from "../components/SignContent/index";
+import { Helmet } from "react-helmet-async";
+import Rigester from "../components/SignContent/Rigister"
 
 function Sign() {
     return (
 
         <div>
             <Header />
-            <SignContent />
-      <Footer />
+            <Rigester />
+            <Helmet><title>Sign</title></Helmet>
         </div>
 
     );

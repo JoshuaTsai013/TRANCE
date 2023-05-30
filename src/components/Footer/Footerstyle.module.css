@@ -52,6 +52,7 @@ footer {
   z-index: 1;
   display: flex;
   justify-content: center;
+  padding: 2rem 2rem 1rem;
 }
 
 .socialicons a {
@@ -84,13 +85,13 @@ footer {
   padding-left: 20%;
   display: block;
   font-size: var(--font-size-small);
-  
+
   color: var(--font-color);
 }
 
 .right li {
-  
-  
+
+
   padding-bottom: 10px;
 }
 
@@ -106,7 +107,7 @@ footer {
 .right a {
   color: rgb(196, 196, 196);
   text-decoration: none;
-  
+
 }
 
 .right a:hover {
@@ -117,10 +118,10 @@ footer {
 
 /* 底部 */
 .bottom {
-  position: absolute;
-  text-align: center;
-  margin: 20%;
- 
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto ;
+  margin-bottom: 0
 }
 
 .bottom p {
@@ -149,10 +150,9 @@ footer {
     margin-right: 20px;
     align-items: flex-start;
   }
-  .bottom{
-   
-    margin-top:14%;
-    position: relative;
+
+  .bottom {
+
   }
 }
 
@@ -168,16 +168,17 @@ footer {
 
   .left {
     align-items: center;
-    
+
     top: 0%;
     left: 0%;
-  
+
     margin-left: 0%;
     /* 取消左方間距 */
     text-align: center;
     /* 水平居中文字 */
 
   }
+
   .right ul {
     list-style: none;
     margin-left: 25px;
@@ -185,17 +186,17 @@ footer {
     padding-left: 0%;
     display: block;
     font-size: var(--font-size-small);
-      flex-direction: column;
-   
+    flex-direction: column;
+
     color: var(--font-color);
   }
-  
+
   .right li {
-    
-    
+
+
     padding-bottom: 10px;
   }
-  
+
   .right h3 {
     border-bottom: 1px solid var(--font-color);
     padding-bottom: 20px;
@@ -204,21 +205,21 @@ footer {
     font-size: var(--font-size-large);
     text-transform: uppercase;
   }
-  
+
   .right a {
     color: rgb(196, 196, 196);
     text-decoration: none;
   }
 
   .right {
-   position: relative;
+    position: relative;
     align-items: center;
     /* 右區塊垂直居中 */
     margin-left: -25%;
     /* 取消左方間距 */
   }
 
- 
+
 
   .right li {
     margin-bottom: 10px;
@@ -231,9 +232,7 @@ footer {
     font-size: var(--font-size-small);
   }
 
-  .bottom{
-   
-    bottom:20px;
-    position: relative;
+  .bottom {
+    
   }
 }

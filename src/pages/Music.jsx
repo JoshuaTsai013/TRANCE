@@ -3,16 +3,24 @@ import Header from "../components/Header";
 import MusicContent from "../components/MusicContent";
 import ScrollToTop from '../components/ScrollToTop';
 
+import { useSongs } from '../react-query';
+
 function Music() {
+
+    const { data, isLoading } = useSongs();
+    // console.log(isLoading);
+    const songs = data || [];
+  
+
     return (
-        <div>
+        <>
             <ScrollToTop />
             <div>
                 <Header />
-                <MusicContent />
+                <MusicContent songs={songs} isLoading={isLoading}/>
             </div>
             <Helmet><title>Music</title></Helmet>
-        </div>
+        </>
     );
 }
 

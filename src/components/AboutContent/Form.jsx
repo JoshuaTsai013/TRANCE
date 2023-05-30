@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './styles/Form.css';
+import { db } from '../../firebase';
+import { collection, addDoc } from 'firebase/firestore';
 
 function Form() {
   const [mail, setMail] = useState('');
@@ -7,17 +9,30 @@ function Form() {
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
 
-
-
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(`Gmail: ${mail}, Name: ${name}, Phone: ${phone}, Message: ${message}`);
-    alert("傳送成功！");
-    setMail('');
-    setName('');
-    setPhone('');
-    setMessage('');
-  }
+
+    try {
+      // 将表单数据保存到 Firebase 数据库
+      const docRef = await addDoc(collection(db, 'formSubmissions'), {
+        mail,
+        name,
+        phone,
+        message,
+      });
+
+      console.log('文档已写入，ID：', docRef.id);
+      alert('傳送成功！');
+
+      // 提交成功后清空表单字段
+      setMail('');
+      setName('');
+      setPhone('');
+      setMessage('');
+    } catch (error) {
+      console.error('添加文档时出错：', error);
+    }
+  };
 
   return (
     <div className="formFrame">
@@ -40,15 +55,11 @@ function Form() {
 
           <label htmlFor="message" className="formLabel">
             Message:
-            <textarea id="message" name="message" rows="4" cols="40" value={message} onChange={(e) => setMessage(e.target.value)} />
+            <textarea id="form-message" name="message" rows="4" cols="40" value={message} onChange={(e) => setMessage(e.target.value)} />
           </label>
-          <form onSubmit={handleSubmit}>
-          
-            <input type="submit" value="submit" id="formButton" />
-          </form>
+
+          <input type="submit" value="Submit" id="formButton" />
         </div>
-
-
       </form>
     </div>
   );

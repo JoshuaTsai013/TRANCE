@@ -1,21 +1,22 @@
 import React, { useContext, useState } from 'react';
 import { Button, Modal } from 'antd';
+import { PlayCircleFilled, HeartFilled } from '@ant-design/icons';
 import _ from 'lodash';
 import { useToggleFavoriteSong } from '../../react-query';
 
 import { FavoriteIcon } from '../Icons';
 
 import { AuthContext } from '../../components/SignContent/context/AuthContext';
-import image1 from '../../../public/images/image1.jpg';
-import image2 from '../../../public/images/image2.jpg';
-import image3 from '../../../public/images/image3.jpg';
-import image4 from '../../../public/images/image4.jpg';
-import image5 from '../../../public/images/image5.jpg';
-import image6 from '../../../public/images/image6.jpg';
-import image7 from '../../../public/images/image7.jpg';
-import image8 from '../../../public/images/image8.jpg';
-import image9 from '../../../public/images/image9.jpg';
-import image10 from '../../../public/images/image10.jpg';
+import image1 from '../../assets/images/image1.jpg';
+import image2 from '../../assets/images/image2.jpg';
+import image3 from '../../assets/images/image3.jpg';
+import image4 from '../../assets/images/image4.jpg';
+import image5 from '../../assets/images/image5.jpg';
+import image6 from '../../assets/images/image6.jpg';
+import image7 from '../../assets/images/image7.jpg';
+import image8 from '../../assets/images/image8.jpg';
+import image9 from '../../assets/images/image9.jpg';
+import image10 from '../../assets/images/image10.jpg';
 
 import styles from './styles/SongBlock.module.css';
 

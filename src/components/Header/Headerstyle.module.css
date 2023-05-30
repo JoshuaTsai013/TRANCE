@@ -18,6 +18,8 @@
 }
 
 .favoriteIcon{
+    color: #ffffff;
+    text-decoration: none;
     width: 50px;
     height: 25px;
 }

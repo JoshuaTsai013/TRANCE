@@ -5,7 +5,8 @@ import {
 } from "../firebase";
 
 export const useSongs = () => {
-    return useQuery([], getSongs);
+    const queryClient = useQueryClient();
+    return useQuery([], getSongs, { queryClient });
 };
 
 export const useToggleFavoriteSong = () => {
@@ -14,13 +15,6 @@ export const useToggleFavoriteSong = () => {
         onSuccess: (data) => {
             queryClient.invalidateQueries(["uid"]);
         },
+        queryClient,
     });
 };
-
-// export const useUserInfo = () => {
-//     return useQuery({
-//         queryKey: ["uid"],
-//         queryFn: getUserInfo,
-//         initialData: {},
-//     });
-// };

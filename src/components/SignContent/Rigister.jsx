@@ -69,7 +69,7 @@ getDownloadURL(storageRef).then(async (downloadURL) => {
         <div className="formContainer">
             <div className="formWrapper">
                 <Header />
-                <img className="sign-logo" src="/images/logo.png" style={{ width: "60px", display: "flex" }}></img>
+                <img className="sign-logo" src="public/images/logo.png" style={{ width: "60px", display: "flex" }}></img>
                 <span className="register-title">Register</span>
                 <form onSubmit={handleSubmit}>
                     <input required type="text" placeholder="username" />

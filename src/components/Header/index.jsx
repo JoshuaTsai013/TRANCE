@@ -71,7 +71,9 @@ function Header() {
                           <img className={styles.photo} src={currentUser.photoURL} alt="" />
                           <span className={styles.username}>{currentUser.displayName}</span>
                         </NavLink>
-                        <FaRegHeart className={styles.favoriteIcon} />
+                        <NavLink as={NavLink} to="/Favorite">
+                          <FaRegHeart className={styles.favoriteIcon} />
+                        </NavLink>
                         <Button className={styles.logoutbtn} onClick={handleSignOut}>
                           <FaSignOutAlt />
                         </Button>

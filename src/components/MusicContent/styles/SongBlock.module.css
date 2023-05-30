@@ -26,12 +26,18 @@
 }
 
 .titleBar {
+    font-family: '123';
     width: auto;
+    
     display: flex;
     padding-right: 10px;
     padding-left: 10px;
     align-items: center;
     justify-content: space-between;
+}
+
+.titleBar h2{
+    font-size: 20px;
 }
 
 

@@ -16,6 +16,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query'
+import Favorite from './pages/Favorite';
 
 const queryClient = new QueryClient()
 
@@ -38,6 +39,7 @@ function App() {
             <Route path="/Sign" element={<Sign />} />
             <Route path="/Model" element={<Model />} />
             <Route path="/User" element={<User />} />
+            <Route path="/Favorite" element={<Favorite />} />
           </Routes>
         </BrowserRouter>
       </HelmetProvider>

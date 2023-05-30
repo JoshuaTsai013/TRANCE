@@ -1,0 +1,37 @@
+.favcontainer {
+
+    display: flex;
+    justify-content: center;
+    /* 水平置中 */
+    align-items: center;
+    /* 垂直置中 */
+    height: 100vh;
+    /* 設置容器高度，使其充滿整個視窗 */
+  
+    background: linear-gradient(180deg, #171753, #211466, #2b1357, #181850);
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8px;
+  }
+  
+  .col {
+    width: 25%;
+    padding: 8px;
+  }
+  
+  .col img {
+    width: 100%;
+  }
+  
+  .col p {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .favtitle{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }

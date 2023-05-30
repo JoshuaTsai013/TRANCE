@@ -32,7 +32,7 @@ const Login = () => {
         <Header />
         <img
           className="sign-logo"
-          src="./public/images/logo.png"
+          src="/images/LOGO.png"
           style={{ width: "60px", display: "flex" }}
           alt="Logo"
         />
